@@ -168,7 +168,7 @@ function coloringIconsGray2Black() {
 }
 
 //home header
-fetch("/folders/components/header/header.html")
+fetch("folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("home-header").innerHTML = data;
