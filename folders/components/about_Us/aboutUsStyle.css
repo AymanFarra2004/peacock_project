@@ -293,7 +293,7 @@ border-width: 1px;
   width: 48px;
   height: 2080px;
   background-size: 48px 80px;
-  background-image: url("/folders/images/white-arrow.svg");
+  background-image: url("folders/images/white-arrow.svg");
   background-repeat: repeat-y;
   transition: transform 0.8s ease-in-out;
 }
@@ -304,7 +304,7 @@ border-width: 1px;
   width: 2620px;
   height: 48px;
   background-size: 80px 48px;
-  background-image: url("/folders/images/black-arrow.svg");
+  background-image: url("folders/images/black-arrow.svg");
   background-repeat: repeat-x;
   transition: transform 0.8s ease-in-out;
 }
