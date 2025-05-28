@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+.outer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(237, 185, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(15px);
+}
+
+.inner-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 166, 0, 0.2);
+  filter: blur(15px);
+}
+
+#mouse {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+}

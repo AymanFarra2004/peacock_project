@@ -1,0 +1,163 @@
+/* @font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf") format("opentype");
+  font-weight: 500; 
+  font-style: normal;
+}
+
+#header-header {
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  margin-top: 58px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#logo-header {
+  width: 122px;
+  height: 58px;
+}
+
+#social-media-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icons-header {
+  height: 31px;
+  width: 32px;
+}
+
+
+#nav-bar-header{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.arabic-header{
+    font-size: 20px;
+    font-family: "Avenir Arabic Medium", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    color: rgba(52, 52, 52, 1);
+}
+
+#frame-icon-header{
+    width: 48px;
+    height: 48px;
+}
+ */
+
+
+
+
+
+/*  @font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf") format("opentype");
+  font-weight: 500; 
+  font-style: normal;
+}
+
+#header-header {
+  display: flex;
+  justify-content: space-between;
+  height: 36.5px;
+  margin-top: 36.5px;
+  margin-left: 63px;
+  margin-right: 63px;
+}
+#logo-header {
+  width: 76.8px;
+  height: 36.5px;
+}
+
+#social-media-header {
+  display: flex;
+  align-items: center;
+  gap: 7.60px;
+}
+
+.icons-header {
+  height: 25px;
+  width: 26px;
+}
+
+
+#nav-bar-header{
+  display: flex;
+  align-items: center;
+  gap: 9.5px;
+}
+
+.arabic-header{
+    font-size: 13px;
+    font-family: "Avenir Arabic Medium", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    color: rgba(52, 52, 52, 1);
+}
+
+#side-bar-btn{
+    width: 30.2px;
+    height: 30.2px;
+}
+ */
+
+
+
+
+
+
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf") format("opentype");
+  font-weight: 500; 
+  font-style: normal;
+}
+
+#header-header {
+  display: flex;
+  justify-content: space-between;
+  height: 43.5px;
+  margin-top: 43.5px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+#logo-header {
+  width: 91.5px;
+  height: 43.5px;
+}
+
+#social-media-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.icons-header {
+  height: 23.2px;
+  width: 23.5px;
+}
+
+
+#nav-bar-header{
+  display: flex;
+  align-items: center;
+  gap: 11.2px;
+}
+
+.arabic-header{
+    font-size: 15px;
+    font-family: "Avenir Arabic Medium", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    color: rgba(52, 52, 52, 1);
+}
+
+#side-bar-btn{
+    width: 36px;
+    height: 36px;
+}

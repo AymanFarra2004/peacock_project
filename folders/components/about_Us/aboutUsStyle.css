@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "Fredoka";
+  src: url("../../fonts/Fredoka-VariableFont_wdth,wght.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grandia";
+  src: url("../../fonts/grandia.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* #about-us {
+  background-color: rgba(254, 216, 95, 1);
+  height: 720px;
+  position: relative;
+  padding-top: 1px;
+}
+
+#about-us h1 {
+  position: absolute;
+  width: 452.7px;
+  top: 140px;
+  left: 240px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+#about-vector {
+  position: absolute;
+  width: 230px;
+  height: 120px;
+  top: 285px;
+  left: 195px;
+  border-width: 4px;
+}
+
+#aboutUs-shape1 {
+  position: absolute;
+  width: 76.5px;
+  height: 95px;
+  top: 224.7px;
+  left: 423px;
+}
+
+#about-us h2 {
+  position: absolute;
+  width: 450px;
+  height: 36px;
+  top: 381.6px;
+  left: 140px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgba(52, 52, 52, 1);
+}
+
+#about-rectangle {
+  position: absolute;
+  background-color: rgba(255, 234, 168, 0.27);
+  width: 783px;
+  height: 574px;
+  top: 146.7px;
+  left: 559px;
+}
+
+#about-rectangle section {
+  position: absolute;
+  background-color: rgba(255, 234, 168, 0.27);
+  width: 693px;
+  height: 484px;
+  top: 90px;
+  left: 90px;
+}
+
+#about-rectangle section h3 {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  width: 535px;
+  height: 230.4px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  color: rgba(52, 52, 52, 1);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+#aboutUs-arrow {
+  position: absolute;
+  width: 282.6px;
+  height: 102.6px;
+  top: 415.8px;
+  left: 335.3px;
+  border-width: 3px;
+}
+
+#aboutUs-shape {
+    position: absolute;
+    width: 56.7px;
+height: 70.2px;
+top: 344.7px;
+left: 450px;
+border-width: 1px;
+
+} */
+
+#about-us {
+  background-color: rgba(254, 216, 95, 1);
+  height: 900px;
+  position: relative;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+#about-us h1 {
+  position: absolute;
+  width: 452.7px;
+  top: 304.2px;
+  left: 140px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+#about-vector {
+  position: absolute;
+  width: 230px;
+  height: 120px;
+  top: 285px;
+  left: 195px;
+  border-width: 4px;
+}
+
+#aboutUs-shape1 {
+  position: absolute;
+  width: 76.5px;
+  height: 95px;
+  top: 224.7px;
+  left: 423px;
+}
+
+#about-us h2 {
+  position: absolute;
+  width: 450px;
+  height: 36px;
+  top: 381.6px;
+  left: 140px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgba(52, 52, 52, 1);
+}
+
+#about-rectangle {
+  position: absolute;
+  background-color: rgba(255, 234, 168, 0.27);
+  width: 783px;
+  height: 737px;
+  top: 146.7px;
+  left: 559px;
+}
+
+#about-rectangle section {
+  position: absolute;
+  background-color: rgba(255, 234, 168, 0.27);
+  width: 693px;
+  height: 647px;
+  top: 90px;
+  left: 90px;
+}
+
+#about-rectangle section h3 {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  width: 531px;
+  height: 230.4px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  color: rgba(52, 52, 52, 1);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+#aboutUs-arrow {
+  position: absolute;
+  width: 282.6px;
+  height: 102.6px;
+  top: 415.8px;
+  left: 335.3px;
+  border-width: 3px;
+  z-index: 1;
+}
+
+#aboutUs-shape {
+  position: absolute;
+  width: 56.7px;
+  height: 70.2px;
+  top: 383px;
+  left: 466px;
+  border-width: 1px;
+}
+
+#about-rectangle section div:nth-of-type(1) {
+  position: absolute;
+  top: 375px;
+  height: 56px;
+  width: 606px;
+  transition: top 1s ease-in-out;
+}
+
+#about-rectangle section:nth-of-type(1) div h4 {
+  position: absolute;
+  left: 44px;
+  top: 29px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  color: rgba(52, 52, 52, 1);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 0%;
+  letter-spacing: 0%;
+  transition: color 1s ease-in-out;
+}
+
+#about-rectangle section:nth-of-type(1) div img {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  opacity: 70%;
+  transition: opacity 1s ease-in-out;
+}
+
+#about-rectangle section div:nth-of-type(2) {
+  position: absolute;
+  top: 427px;
+  height: 56px;
+  width: 606px;
+}
+#about-rectangle section:nth-of-type(2) div h4 {
+  position: absolute;
+  left: 44px;
+  top: 29px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  color: rgba(52, 52, 52, 1);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 0%;
+  letter-spacing: 0%;
+}
+#about-rectangle section:nth-of-type(2) div img {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  opacity: 70%;
+}
+
+#animate-arrow-white {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 48px;
+  height: 2080px;
+  background-size: 48px 80px;
+  background-image: url("/folders/images/white-arrow.svg");
+  background-repeat: repeat-y;
+  transition: transform 0.8s ease-in-out;
+}
+#animate-arrow-black {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  width: 2620px;
+  height: 48px;
+  background-size: 80px 48px;
+  background-image: url("/folders/images/black-arrow.svg");
+  background-repeat: repeat-x;
+  transition: transform 0.8s ease-in-out;
+}
