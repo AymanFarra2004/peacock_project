@@ -11,7 +11,7 @@ function coloringIconsBlack2white() {
   });
 }
 
-fetch("folders/components/header/header.html")
+fetch("/folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("about-header").innerHTML = data;

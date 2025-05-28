@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerLink = document.createElement("link");
     headerLink.id = cssId;
     headerLink.rel = "stylesheet";
-    headerLink.href = "folders/components/header/headerStyle.css";
+    headerLink.href = "/folders/components/header/headerStyle.css";
     document.head.appendChild(headerLink);
   }
 });
@@ -16,12 +16,12 @@ if (!document.getElementById(sideBarCssId)) {
   const sidebarLink = document.createElement("link");
   sidebarLink.id = sideBarCssId;
   sidebarLink.rel = "stylesheet";
-  sidebarLink.href = "folders/components/slide bar/sideBarStyle.css";
+  sidebarLink.href = "folders/components/side_bar/sideBarStyle.css";
   document.head.appendChild(sidebarLink);
 }
 
 //sideBar
-fetch("folders/components/slide bar/sideBar.html")
+fetch("folders/components/side_bar/sideBar.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("sidebar-container").innerHTML = data;
@@ -50,7 +50,7 @@ if (!document.getElementById(homeStyleCSSId)) {
 }
 
 //home
-fetch("folders/components/home/home.html")
+fetch("/folders/components/home/home.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("home-container").innerHTML = data;
@@ -70,12 +70,12 @@ if (!document.getElementById(aboutusStyleCSSId)) {
   const homeLink = document.createElement("link");
   homeLink.id = aboutusStyleCSSId;
   homeLink.rel = "stylesheet";
-  homeLink.href = "folders/components/about Us/aboutUsStyle.css";
+  homeLink.href = "/folders/components/about_Us/aboutUsStyle.css";
   document.head.appendChild(homeLink);
 }
 
 //about US
-fetch("folders/components/about Us/aboutUs.html")
+fetch("/folders/components/about_Us/aboutUs.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("about-us-container").innerHTML = data;
