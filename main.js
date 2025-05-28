@@ -80,7 +80,7 @@ fetch("folders/components/about_Us/aboutUs.html")
   .then((data) => {
     document.getElementById("about-us-container").innerHTML = data;
 
-    arrowsAnimation();
+    setTimeout(arrowsAnimation, 100);
     loctionAnimation();
     setInterval(loctionAnimation, 10000);
-  });
+  }, 100);
