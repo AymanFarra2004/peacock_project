@@ -126,9 +126,14 @@ left: 450px;
 border-width: 1px;
 
 } */
-
-#about-us {
+#about-container {
   background-color: rgba(254, 216, 95, 1);
+}
+
+#about-header {
+padding-top: 0.1px;
+}
+#about-us {
   height: 900px;
   position: relative;
   padding-top: 1px;

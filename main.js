@@ -1,15 +1,15 @@
 //header style
 document.addEventListener("DOMContentLoaded", function () {
-  const cssId = "headerStyle-css";
-  if (!document.getElementById(cssId)) {
+  const headercssId = "headerStyle-css";
+  if (!document.getElementById(headercssId)) {
     const headerLink = document.createElement("link");
-    headerLink.id = cssId;
+    headerLink.id = headercssId;
     headerLink.rel = "stylesheet";
     headerLink.href = "folders/components/header/headerStyle.css";
     document.head.appendChild(headerLink);
   }
 });
-
+console.log(window.innerWidth);
 //sideBar style
 const sideBarCssId = "sidebar-css";
 if (!document.getElementById(sideBarCssId)) {
@@ -84,3 +84,33 @@ fetch("folders/components/about_Us/aboutUs.html")
     loctionAnimation();
     setInterval(loctionAnimation, 10000);
   });
+
+//servicesstyle
+const servicesStyleCSSId = "services-css";
+if (!document.getElementById(servicesStyleCSSId)) {
+  const servicesLink = document.createElement("link");
+  servicesLink.id = servicesStyleCSSId;
+  servicesLink.rel = "stylesheet";
+  servicesLink.href = "folders/components/our_services/servicesStyle.css";
+  document.head.appendChild(servicesLink);
+}
+
+//services
+fetch("folders/components/our_services/services.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.querySelector("#services-container").innerHTML = data;
+    
+  });
+
+//rotating Text Style
+document.addEventListener("DOMContentLoaded", () => {
+  const rotatingTextcssId = "rotatingText-css";
+  if (!document.querySelector(rotatingTextcssId)) {
+    const rotatingLink = document.createElement("link");
+    rotatingLink.id = rotatingTextcssId;
+    rotatingLink.rel = "stylesheet";
+    rotatingLink.href = "folders/rotating_text/rotatingTextStyle.css";
+    document.head.appendChild(rotatingLink);
+  }
+});

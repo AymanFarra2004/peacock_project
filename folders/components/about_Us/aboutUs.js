@@ -1,15 +1,4 @@
-function coloringIconsBlack2white() {
-  let icons = document.querySelectorAll(".about-icon");
 
-  icons.forEach((el) => {
-    el.addEventListener("mouseenter", () => {
-      el.src = el.getAttribute("white");
-    });
-    el.addEventListener("mouseleave", () => {
-      el.src = el.getAttribute("black");
-    });
-  });
-}
 
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
@@ -24,42 +13,27 @@ fetch("folders/components/header/header.html")
     let icons = document
       .querySelector("#about-header")
       .querySelectorAll(".icon");
+
+    icons.forEach((icon) => {
+      icon.classList.add("about-icon");
+      icon.src = icon.getAttribute("black");
+
+    });
     //whatsapp
-    icons[0].classList.add("about-icon");
-    icons[0].removeAttribute("gray");
     icons[0].setAttribute("white", "folders/images/whatsapp-white.svg");
-    icons[0].src = icons[0].getAttribute("black");
 
     //X
-    icons[1].classList.add("about-icon");
-    icons[1].removeAttribute("gray");
     icons[1].setAttribute("white", "folders/images/x-white.svg");
-    icons[1].src = icons[1].getAttribute("black");
 
-    icons[2].classList.add("about-icon");
-    icons[2].removeAttribute("gray");
     icons[2].setAttribute("white", "folders/images/telegram-white.svg");
-    icons[2].src = icons[2].getAttribute("black");
 
-    icons[3].classList.add("about-icon");
-    icons[3].removeAttribute("gray");
     icons[3].setAttribute("white", "folders/images/instgram-white.svg");
-    icons[3].src = icons[3].getAttribute("black");
 
-    icons[4].classList.add("about-icon");
-    icons[4].removeAttribute("gray");
     icons[4].setAttribute("white", "folders/images/be-white.svg");
-    icons[4].src = icons[4].getAttribute("black");
 
-    icons[5].classList.add("about-icon");
-    icons[5].removeAttribute("gray");
     icons[5].setAttribute("white", "folders/images/linkedin-white.svg");
-    icons[5].src = icons[5].getAttribute("black");
 
-    icons[6].classList.add("about-icon");
-    icons[6].removeAttribute("gray");
     icons[6].setAttribute("white", "folders/images/facebook-white.svg");
-    icons[6].src = icons[6].getAttribute("black");
 
     //coloring social media header icons
     coloringIconsBlack2white();
@@ -123,7 +97,7 @@ function loctionAnimation() {
       locIcon.src = locIcon.getAttribute("data-black");
       locIcon.style.opacity = "0.7";
     }, 700);
-    
+
     locIcon.style.opacity = "0.2";
     locText.style.color = locText.getAttribute("data-black");
   }, 10000);

@@ -153,19 +153,6 @@ setInterval(animateImages, 8000);
  */
 
 
-//colring social media icons Gray to Black
-function coloringIconsGray2Black() {
-  let icons = document.querySelectorAll(".icon");
-
-  icons.forEach((el) => {
-    el.addEventListener("mouseenter", () => {
-      el.src = el.getAttribute("black");
-    });
-    el.addEventListener("mouseleave", () => {
-      el.src = el.getAttribute("gray");
-    });
-  });
-}
 
 //home header
 fetch("folders/components/header/header.html")
@@ -177,7 +164,6 @@ fetch("folders/components/header/header.html")
     coloringIconsGray2Black();
   });
 
-  
 document.addEventListener("DOMContentLoaded", () => {
   function animateImages() {
     //1
@@ -212,15 +198,15 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       let white = document.querySelector(".white");
       let black = document.querySelector(".black");
-      
+
       white.style.height = "209px";
-      black.style.height = "421px"
+      black.style.height = "421px";
       white.style.top = "423px";
       black.style.top = "0px";
     }, 10000);
 
     //4
-     setTimeout(() => {
+    setTimeout(() => {
       let white = document.querySelector(".white");
       let black = document.querySelector(".black");
       let purble = document.querySelector(".purble");
@@ -229,10 +215,10 @@ document.addEventListener("DOMContentLoaded", () => {
       purble.style.borderBottomRightRadius = "0px";
       purble.style.borderTopLeftRadius = "93px";
       purble.style.borderBottomLeftRadius = "93px";
-      
+
       white.style.height = "209px";
       black.style.height = "421px";
-      
+
       purble.style.left = "0";
       white.style.top = "423px";
       black.style.top = "0px";

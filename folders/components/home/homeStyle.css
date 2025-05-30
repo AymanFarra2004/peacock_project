@@ -380,8 +380,8 @@
 
 #home {
   display: flex;
+  margin-top: 153x;
   justify-content: space-between;
-  position: relative;
   height: 900px;
   overflow-x: hidden;
   max-width: 100vw;
@@ -518,9 +518,9 @@
 #images {
   width: 634px;
   height: 627px;
-  position: absolute;
-  top: 27.7px;
-  right: 76.5px;
+  position: relative;
+  margin-top: 37px;
+  margin-right: 75px;
    max-width: 100%;
 }
 
