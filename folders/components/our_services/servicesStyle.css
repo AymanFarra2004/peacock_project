@@ -85,7 +85,7 @@
   border-radius: 40px;
   transition: left 0.3s;
 }
-.cut-corner {
+.cut-corner {/*ضروري تذكر قصة الزاوية الي بالعكس*/
   position: absolute;
   width: 100px;
   height: 101px;
@@ -258,6 +258,6 @@
 #rotating-text-bottom {
   z-index: -1;
   position: absolute;
-  bottom: -200px;
-  left: -150px;
+  bottom: -225px;
+  left: -160px;
 }

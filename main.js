@@ -100,7 +100,6 @@ fetch("folders/components/our_services/services.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#services-container").innerHTML = data;
-    
   });
 
 //rotating Text Style
@@ -114,3 +113,34 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(rotatingLink);
   }
 });
+
+//imprtatnt works style
+const improtantStyleCSSId = "impotantWorks-css";
+if (!document.getElementById(improtantStyleCSSId)) {
+  const importantWorksLink = document.createElement("link");
+  importantWorksLink.id = improtantStyleCSSId;
+  importantWorksLink.rel = "stylesheet";
+  importantWorksLink.href =
+    "folders/components/important_Works/importantWorksStyle.css";
+  document.head.appendChild(importantWorksLink);
+}
+
+//imprtatnt works page
+fetch("folders/components/important_Works/importantWorks.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("works-container").innerHTML = data;
+
+    //coloring social media sideBar icons
+    coloringIconsGray2Black();
+    
+  });
+
+/* document.addEventListener("DOMContentLoaded", () => {
+  const sidebarBtns = document.querySelectorAll(".sidebar-btn");
+  console.log(sidebarBtns.length)
+  sidebarBtns.forEach((el) => {
+    console.log(el.innerHTML);
+    el.addEventListener("click", openSidebar);
+  });
+}); */

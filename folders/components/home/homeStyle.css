@@ -417,7 +417,6 @@
   left: 276px;
 } */
 
-
 #main-home {
   width: 448.2px;
   height: 398.6px;
@@ -508,11 +507,22 @@
   top: 369px;
   border-style: none;
   border-radius: 8px;
-  background-color: rgba(254, 216, 95, 1);
+  background: linear-gradient(
+    to right,
+    rgba(30, 164, 139, 1) 50%,
+    rgba(254, 216, 95, 1) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
   font-family: "Avenir Arabic Medium";
   font-weight: 800;
   font-size: 18px;
   color: rgba(52, 52, 52, 1);
+  transition: background-position 0.5s ease, color 0.5s ease;
+}
+#request-btn-home:hover {
+  background-position: left bottom;
+  color: white;
 }
 
 #images {
@@ -521,7 +531,7 @@
   position: relative;
   margin-top: 37px;
   margin-right: 75px;
-   max-width: 100%;
+  max-width: 100%;
 }
 
 .purble {

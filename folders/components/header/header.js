@@ -11,12 +11,12 @@ function coloringIconsGray2Black() {
     const container = document.querySelector(selector);
     if (container !== null) {
       icons = container.querySelectorAll(".icon");
-      icons.forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          el.src = el.getAttribute("black");
+      icons.forEach((ele) => {
+        ele.addEventListener("mouseenter", () => {
+          ele.src = ele.getAttribute("black");
         });
-        el.addEventListener("mouseleave", () => {
-          el.src = el.getAttribute("gray");
+        ele.addEventListener("mouseleave", () => {
+          ele.src = ele.getAttribute("gray");
         });
       });
     }
@@ -33,6 +33,40 @@ function coloringIconsBlack2white() {
     });
     el.addEventListener("mouseleave", () => {
       el.src = el.getAttribute("black");
+    });
+  });
+}
+
+//coloring social media icons White to Gray
+function coloringIconsWhite2Gray() {
+  const icons = document
+    .querySelector("#cate-header")
+    .querySelectorAll(".icon");
+
+  icons.forEach((icon) => {
+    icon.addEventListener("mouseenter", () => {
+      icon.src = icon.getAttribute("gray");
+    });
+
+    icon.addEventListener("mouseleave", () => {
+      icon.src = icon.getAttribute("white");
+    });
+  });
+}
+
+//coloring social meadis icons white to black
+function coloringIconsWhite2Black() {
+  const icons = document
+    .querySelector("#cate-header")
+    .querySelectorAll(".icon");
+
+  icons.forEach((icon) => {
+    icon.addEventListener("mouseenter", () => {
+      icon.src = icon.getAttribute("black");
+    });
+
+    icon.addEventListener("mouseleave", () => {
+      icon.src = icon.getAttribute("white");
     });
   });
 }

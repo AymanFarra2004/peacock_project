@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-#header-header {
+.header-header {
   display: flex;
   justify-content: space-between;
   height: 43.5px;
@@ -13,12 +13,12 @@
   margin-left: 75px;
   margin-right: 75px;
 }
-#logo-header {
+.logo-header {
   width: 91.5px;
   height: 43.5px;
 }
 
-#social-media-header {
+.social-media-header {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -30,7 +30,7 @@
 }
 
 
-#nav-bar-header{
+.nav-bar-header{
   display: flex;
   align-items: center;
   gap: 11.2px;
@@ -44,7 +44,11 @@
     color: rgba(52, 52, 52, 1);
 }
 
-#side-bar-btn{
-    width: 36px;
-    height: 36px;
+.sidebar-btn {
+  width: 40px;
+  height: 30px;
+}
+.sidebar-btn img{
+    width: 40px;
+    height: 30px;
 }

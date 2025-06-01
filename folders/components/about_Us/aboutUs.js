@@ -7,7 +7,7 @@ fetch("folders/components/header/header.html")
 
     let logo = document
       .querySelector("#about-header")
-      .querySelector("#logo-header");
+      .querySelector(".logo-header");
     logo.src = "folders/images/peackok-logo-black.svg";
 
     let icons = document
@@ -15,9 +15,10 @@ fetch("folders/components/header/header.html")
       .querySelectorAll(".icon");
 
     icons.forEach((icon) => {
-      icon.classList.add("about-icon");
+      /* icon.classList.add("about-icon"); */
       icon.src = icon.getAttribute("black");
 
+      document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
     });
     //whatsapp
     icons[0].setAttribute("white", "folders/images/whatsapp-white.svg");
@@ -39,39 +40,40 @@ fetch("folders/components/header/header.html")
     coloringIconsBlack2white();
   });
 
+  
 function arrowsAnimation() {
   let whiteArrow = document.querySelector("#animate-arrow-white");
 
-  let x = 40;
+  let x = 30;
   let y = 1180;
   setInterval(() => {
     if (x <= 1180) {
-      whiteArrow.style.transform = `translateY(${x + 40}px)`;
-      x += 55;
-    } else if (y > 40) {
-      whiteArrow.style.transform = `translateY(${y - 40}px)`;
-      y -= 40;
+      whiteArrow.style.transform = `translateY(${x + 30}px)`;
+      x += 30;
+    } else if (y > 30) {
+      whiteArrow.style.transform = `translateY(${y - 30}px)`;
+      y -= 30;
     } else {
-      x = 40;
+      x = 30;
       y = 1180;
     }
-  }, 700);
+  }, 500);
 
   let blackArrow = document.querySelector("#animate-arrow-black");
-  let a = 40;
+  let a = 30;
   let b = 1180;
   setInterval(() => {
     if (a <= 1180) {
-      blackArrow.style.transform = `translateX(${a + 40}px)`;
-      a += 55;
-    } else if (b > 40) {
-      blackArrow.style.transform = `translateX(${b - 40}px)`;
-      b -= 40;
+      blackArrow.style.transform = `translateX(${a + 30}px)`;
+      a += 30;
+    } else if (b > 30) {
+      blackArrow.style.transform = `translateX(${b - 30}px)`;
+      b -= 30;
     } else {
-      a = 40;
+      a = 30;
       b = 1180;
     }
-  }, 700);
+  }, 500);
 }
 
 function loctionAnimation() {

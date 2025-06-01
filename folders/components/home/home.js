@@ -162,6 +162,9 @@ fetch("folders/components/header/header.html")
 
     //coloring social media header icons
     coloringIconsGray2Black();
+
+    //open side bar
+    document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
   });
 
 document.addEventListener("DOMContentLoaded", () => {
