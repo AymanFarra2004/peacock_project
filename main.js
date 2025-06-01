@@ -133,14 +133,22 @@ fetch("folders/components/important_Works/importantWorks.html")
 
     //coloring social media sideBar icons
     coloringIconsGray2Black();
-    
   });
 
-/* document.addEventListener("DOMContentLoaded", () => {
-  const sidebarBtns = document.querySelectorAll(".sidebar-btn");
-  console.log(sidebarBtns.length)
-  sidebarBtns.forEach((el) => {
-    console.log(el.innerHTML);
-    el.addEventListener("click", openSidebar);
+
+//blog agency style
+const blogStyleCSSId = "blogAgency-css";
+if (!document.getElementById(blogStyleCSSId)) {
+  const blogLink = document.createElement("link");
+  blogLink.id = blogStyleCSSId;
+  blogLink.rel = "stylesheet";
+  blogLink.href =
+    "folders/components/blog_Agency/blogStyle.css";
+  document.head.appendChild(blogLink);
+}
+//blog Agency page
+fetch("folders/components/blog_Agency/blog.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("blog-agency-container").innerHTML = data;
   });
-}); */

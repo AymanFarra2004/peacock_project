@@ -4,6 +4,7 @@ function coloringIconsGray2Black() {
     "#home-header",
     "#social-media-sidebar",
     "#header-services",
+    "#blog-header",
   ];
   let icons = [];
 

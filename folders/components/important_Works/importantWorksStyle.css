@@ -20,6 +20,7 @@
   font-style: normal;
 }
 
+
 #imprtantWorks {
   height: auto;
   background: rgba(52, 52, 52, 1);
@@ -212,6 +213,7 @@
     rgba(254, 216, 95, 1) 50%,
     rgba(30, 164, 139, 1) 50%
   );
+  background-size: 200% 100%;
   border-radius: 8px;
   border: none;
   font-family: "Avenir Arabic Medium", sans-serif;
@@ -221,12 +223,11 @@
   letter-spacing: 0%;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-  background-size: 200% 100%;
-  background-position: right bottom;
+  background-position: right;
   transition: background-position 0.5s ease, color 0.5s ease;
 }
 #works-btn:hover {
-  background-position: left bottom;
+  background-position: left;
   color: rgba(52, 52, 52, 1);
 }
 
