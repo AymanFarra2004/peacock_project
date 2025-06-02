@@ -41,6 +41,32 @@
   margin-left: 75px;
   width: 500px;
   height: auto;
+  position: relative;
+}
+#blog-change-arrows {
+  width: 56px;
+  height: 128px;
+  position: absolute;  
+  left: 430px;
+  top: 45px;
+}
+
+#blog-change-arrows div:nth-child(1) {
+  width: 56px;
+  height: 56px;
+}
+#blog-change-arrows div:nth-child(1) img {
+  width: 21px;
+  height: 12px;
+}
+
+#blog-change-arrows div:nth-child(2) {
+  width: 56px;
+  height: 56px;
+}
+#blog-change-arrows div:nth-child(2) img {
+  width: 21px;
+  height: 12px;
 }
 
 #blog-agency .container main h1 {
@@ -367,3 +393,4 @@
   width: 18px;
   height: 23px;
 }
+

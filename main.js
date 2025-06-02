@@ -151,4 +151,6 @@ fetch("folders/components/blog_Agency/blog.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("blog-agency-container").innerHTML = data;
+
+      blogChangeArrows();
   });
