@@ -8,6 +8,7 @@
 .header-header {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
   height: 43.5px;
   margin-top: 43.5px;
   margin-left: 75px;
