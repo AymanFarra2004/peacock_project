@@ -5,9 +5,9 @@ function coloringIconsGray2Black() {
     "#social-media-sidebar",
     "#header-services",
     "#blog-header",
+    "#partners-header"
   ];
   let icons = [];
-
   for (let selector of possibleContainers) {
     const container = document.querySelector(selector);
     if (container !== null) {

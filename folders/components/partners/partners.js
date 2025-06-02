@@ -1,27 +1,9 @@
-fetch("folders/components/header/header.html")
-  .then((res) => res.text())
-  .then((data) => {
-    document.querySelector("#blog-header").innerHTML = data;
-
-    document
-      .querySelector("#blog-agency-container")
-      .querySelector(".sidebar-btn")
-      .addEventListener("click", openSidebar);
-    coloringIconsGray2Black();
-  });
-
-fetch("folders/rotating_text/rotatingText.html")
-  .then((res) => res.text())
-  .then((data) => {
-    document.querySelector("#blog-rotate-text").innerHTML = data;
-  });
-
-function blogChangeArrows() {
+function partnersChangeArrows() {
   const upArrow = document.querySelector(
-    "#blog-change-arrows div:nth-child(1) img"
+    "#partners-change-arrows div:nth-child(1) img"
   );
   const downArrow = document.querySelector(
-    "#blog-change-arrows div:nth-child(2) img"
+    "#partners-change-arrows div:nth-child(2) img"
   );
 
   upArrow.addEventListener("click", () => {
@@ -55,8 +37,22 @@ function blogChangeArrows() {
         upArrow.style.transform = "scaleY(-1)";
       }
 
-      downArrow.src = downArrow.getAttribute("gray");
-      upArrow.src = upArrow.getAttribute("black");
+      downArrow.src = upArrow.getAttribute("gray");
+      upArrow.src = downArrow.getAttribute("black");
     }
   });
 }
+
+fetch("folders/components/header/header.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.querySelector("#partners-header").innerHTML = data;
+
+    coloringIconsGray2Black();
+
+    document
+      .querySelector("#partners-header")
+      .querySelector(".sidebar-btn")
+      .addEventListener("click", openSidebar);
+    coloringIconsGray2Black();
+  });

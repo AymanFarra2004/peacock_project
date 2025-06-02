@@ -29,16 +29,6 @@ fetch("folders/components/side_bar/sideBar.html")
     coloringIconsGray2Black();
   });
 
-//open & close sideBar
-function openSidebar() {
-  document.getElementById("container-sidebar").style.width = "650px";
-  document.getElementById("overlay").style.display = "block";
-}
-function closeSidebar() {
-  document.getElementById("container-sidebar").style.width = "0";
-  document.getElementById("overlay").style.display = "none";
-}
-
 //home style
 const homeStyleCSSId = "home-css";
 if (!document.getElementById(homeStyleCSSId)) {
@@ -135,15 +125,13 @@ fetch("folders/components/important_Works/importantWorks.html")
     coloringIconsGray2Black();
   });
 
-
 //blog agency style
 const blogStyleCSSId = "blogAgency-css";
 if (!document.getElementById(blogStyleCSSId)) {
   const blogLink = document.createElement("link");
   blogLink.id = blogStyleCSSId;
   blogLink.rel = "stylesheet";
-  blogLink.href =
-    "folders/components/blog_Agency/blogStyle.css";
+  blogLink.href = "folders/components/blog_Agency/blogStyle.css";
   document.head.appendChild(blogLink);
 }
 //blog Agency page
@@ -152,5 +140,24 @@ fetch("folders/components/blog_Agency/blog.html")
   .then((data) => {
     document.getElementById("blog-agency-container").innerHTML = data;
 
-      blogChangeArrows();
+    blogChangeArrows();
+  });
+
+//partners style
+const partnersStyleCSSId = "partners-css";
+if (!document.getElementById(partnersStyleCSSId)) {
+  const partnersLink = document.createElement("link");
+  partnersLink.id = partnersStyleCSSId;
+  partnersLink.rel = "stylesheet";
+  partnersLink.href = "folders/components/partners/partensStyle.css";
+  document.head.appendChild(partnersLink);
+}
+
+//partners page
+fetch("folders/components/partners/partners.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("partners-container").innerHTML = data;
+    
+    partnersChangeArrows();
   });
