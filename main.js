@@ -31,7 +31,7 @@ fetch("folders/components/side_bar/sideBar.html")
 
 //open & close sideBar
 function openSidebar() {
-  document.getElementById("container-sidebar").style.width = "519px";
+  document.getElementById("container-sidebar").style.width = "650px";
   document.getElementById("overlay").style.display = "block";
 }
 function closeSidebar() {

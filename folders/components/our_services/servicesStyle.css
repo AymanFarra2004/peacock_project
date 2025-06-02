@@ -31,7 +31,7 @@
   height: 960px;
   position: relative;
   overflow: hidden;
-
+  max-width: 1440px;
 }
 
 #services-vector1 {

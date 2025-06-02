@@ -130,6 +130,7 @@ border-width: 1px;
   background-color: rgba(254, 216, 95, 1);
   position: relative;
   overflow: hidden;
+  max-width: 1440px;
 }
 
 #about-header {
