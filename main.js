@@ -49,8 +49,8 @@ fetch("folders/components/home/home.html")
 //mouse wrap
 const mouseMove = document.getElementById("mouse");
 document.addEventListener("mousemove", (e) => {
-  mouseMove.style.transform = `translate(${e.clientX - 65}px, ${
-    e.clientY - 90
+  mouseMove.style.transform = `translate(${e.clientX - 50}px, ${
+    e.clientY - 50
   }px)`;
 });
 
@@ -158,12 +158,12 @@ fetch("folders/components/partners/partners.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("partners-container").innerHTML = data;
-    
+
     partnersChangeArrows();
   });
 
 //said about us style
-  const aboutStyleCSSId = "about-us-css";
+const aboutStyleCSSId = "about-us-css";
 if (!document.getElementById(aboutStyleCSSId)) {
   const aboutLink = document.createElement("link");
   aboutLink.id = aboutStyleCSSId;
@@ -171,12 +171,12 @@ if (!document.getElementById(aboutStyleCSSId)) {
   aboutLink.href = "folders/components/said_aboutUs/saidAboutUsStyle.css";
   document.head.appendChild(aboutLink);
 }
-  //said about us page
+//said about us page
 fetch("folders/components/said_aboutUs/saidAboutUs.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("said-aboutUs-container").innerHTML = data;
-    
+
     slider();
     swipeBySliderBtns();
   });
