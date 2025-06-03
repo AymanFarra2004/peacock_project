@@ -3,9 +3,12 @@ fetch("folders/components/header/header.html")
   .then((data) => {
     document.querySelector("#header-services").innerHTML = data;
     coloringIconsGray2Black();
-    
+
     //open side bar
-    document.querySelector("#services-container").querySelector(".sidebar-btn").addEventListener("click", openSidebar);
+    document
+      .querySelector("#services-container")
+      .querySelector(".sidebar-btn")
+      .addEventListener("click", openSidebar);
   });
 
 fetch("folders/rotating_text/rotatingText.html")

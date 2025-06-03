@@ -161,3 +161,22 @@ fetch("folders/components/partners/partners.html")
     
     partnersChangeArrows();
   });
+
+//said about us style
+  const aboutStyleCSSId = "about-us-css";
+if (!document.getElementById(aboutStyleCSSId)) {
+  const aboutLink = document.createElement("link");
+  aboutLink.id = aboutStyleCSSId;
+  aboutLink.rel = "stylesheet";
+  aboutLink.href = "folders/components/said_aboutUs/saidAboutUsStyle.css";
+  document.head.appendChild(aboutLink);
+}
+  //said about us page
+fetch("folders/components/said_aboutUs/saidAboutUs.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("said-aboutUs-container").innerHTML = data;
+    
+    slider();
+    swipeBySliderBtns();
+  });
