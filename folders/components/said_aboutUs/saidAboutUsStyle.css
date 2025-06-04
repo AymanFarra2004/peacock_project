@@ -84,6 +84,9 @@
   position: relative;
   cursor: grab;
 }
+#said-slider-wrapper:active {
+  cursor: grabbing;
+}
 
 #said-slider-wrapper .said-slider-overlay {
   position: absolute;

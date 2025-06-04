@@ -180,3 +180,24 @@ fetch("folders/components/said_aboutUs/saidAboutUs.html")
     slider();
     swipeBySliderBtns();
   });
+
+
+  //contact us style
+const contactStyleCSSId = "contact-us-css";
+if (!document.getElementById(contactStyleCSSId)) {
+  const contactLink = document.createElement("link");
+  contactLink.id = contactStyleCSSId;
+  contactLink.rel = "stylesheet";
+  contactLink.href = "folders/components/contact/contactStyle.css";
+  document.head.appendChild(contactLink);
+}
+
+  //contact us page
+  fetch("folders/components/contact/contact.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("contact-us-container").innerHTML = data;
+
+    customSelect();
+    regularExpEmail();
+  });

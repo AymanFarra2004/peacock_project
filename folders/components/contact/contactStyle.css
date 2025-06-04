@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "uniform rnd";
+  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "uniform rnd light";
+  src: url("../../fonts/Uniform Rounded Condensed Light.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+#contact {
+  height: 900px;
+  max-width: 1440px;
+  background: rgba(254, 216, 95, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#contact-header {
+  padding-top: 0.1px;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 75px 0 75px;
+}
+#contact .container h1 {
+  width: 503px;
+  height: 79px;
+  margin-top: 118px;
+  font-family: "uniform rnd", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+#contact .container main {
+  position: relative;
+}
+#contact .container main h2 {
+  width: 432px;
+  height: 80px;
+  margin-top: 35px;
+  margin-left: 45px;
+  font-family: "uniform rnd light", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(52, 52, 52, 1);
+}
+
+#contact-vector {
+  width: 330px;
+  height: 130px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  border-width: 5px;
+}
+
+#contact-map {
+  width: 505px;
+  height: 338px;
+  margin-top: 32px;
+  position: relative;
+}
+#contact-map img {
+  width: 505px;
+  height: 338px;
+  border-radius: 16px;
+}
+#contact-map .map-address {
+  width: 433px;
+  height: 47px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+#contact-map .map-address img {
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+#contact-map .map-address p {
+  width: 401px;
+  height: 47px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+  text-align: center;
+}
+
+#contact .container section {
+  width: 650px;
+  height: 592px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  margin-top: 95px;
+  margin-left: 85px;
+}
+#message-header {
+  width: 554px;
+  height: 33px;
+  justify-content: space-between;
+  padding: 0 16px 12px 16px;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+#message-header h2 {
+  width: 526px;
+  height: 33px;
+  font-family: "uniform rnd";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 166%;
+  letter-spacing: 0%;
+}
+
+#contact-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-boxes form {
+  width: 554px;
+  height: 459px;
+  margin-top: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
+  display: grid;
+  grid-template-columns: 100px 438px;
+  grid-template-rows: 56px 56px 56px 134px;
+  column-gap: 16px;
+  row-gap: 24px;
+}
+
+#contact-boxes form input::placeholder,
+#contact-boxes form textarea::placeholder {
+  color: rgba(179, 179, 179, 1);
+  font-family: "Avenir Arabic Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+#contact-boxes form input,
+/* #contact-boxes form select, */
+#contact-boxes form textarea, .selected-option {
+  border-radius: 12px;
+  border: none;
+  background: rgba(245, 245, 245, 1);
+  font-family: "Avenir Arabic Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 16px;
+}
+#contact-boxes form textarea {
+  padding-top: 16px;
+}
+#contact-boxes form input:nth-child(1),
+#contact-boxes form input:nth-child(2),
+#contact-boxes form textarea {
+  grid-column: 1 / span 2;
+}
+#contact-boxes form select {
+  grid-column: 1;
+}
+#contact-boxes form input:nth-child(4) {
+  grid-column: 2;
+}
+
+.custom-select {
+  position: relative;
+  width: 100px;
+  grid-column: 1;
+  height: 56px;
+}
+#selection-arrow {
+  position: absolute;
+  right: 7px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  background: rgba(245, 245, 245, 1);
+  border-radius: 12px;
+  height: 56px;
+  padding: 0px 12px;
+  font-family: "Avenir Arabic Medium";
+  font-size: 16px;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.option {
+  font-family: "Avenir Arabic Medium";
+  background: rgba(245, 245, 245, 1);
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0px 12px;
+  font-size: 16px;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+.selected-option {
+  border: none;
+  color: rgba(179, 179, 179, 1);
+}
+
+.options {
+  position: absolute;
+  height: 250px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: none;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.option:hover {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.option img,
+.selected-option img {
+  width: 20px;
+  height: 15px;
+}
+
+#contact-submit-btn {
+  grid-column: 2;
+  justify-self: end;
+  height: 61px;
+}
+#contact-submit-btn button {
+  width: 133px;
+  height: 61px;
+  border-radius: 8px;
+  border: none;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background: rgba(254, 216, 95, 1);
+  color: rgba(52, 52, 52, 1);
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+#contact-rotate-text {
+  position: absolute;
+  top: -254px;
+  right: -300px;
+  z-index: -2;
+}
+.contact-main-vector1 {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+}
+
+.contact-main-vector2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 90px;
+  right: 160px;
+}
+
+.contact-main-vector3 {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  bottom: 155px;
+  right: 120px;
+  z-index: -1;
+}
+
+#contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 70px;
+  max-width: 1440px;
+  background: rgba(255, 255, 255, 1);
+}
+
+#contact-footer > div:first-child {
+  width: 290px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+#contact-footer > div:first-child p {
+  font-family: "uniform rnd";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+#contact-footer > div:nth-child(2) {
+  width: 350px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+#contact-footer > div:nth-child(2) p {
+font-family: "Avenir Arabic Medium";
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+}
+#contact-footer > div > div {
+  display: flex;
+  gap: 5px;
+}
+
+
