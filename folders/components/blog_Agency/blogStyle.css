@@ -101,6 +101,7 @@
   letter-spacing: 0%;
   color: rgba(52, 52, 52, 1);
   transition: background-position 0.5s ease, color 0.5s ease;
+  cursor: pointer;
 }
 #blog-btn:hover {
   background-position: left;

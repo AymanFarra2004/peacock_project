@@ -9,15 +9,6 @@ document.addEventListener("mousemove", (e) => {
   }px)`;
 });
 
-function openCloseSideBar() {
-  const btn = document.querySelector(".sidebar-btn");
-  btn.addEventListener("click", openSidebar);
-
-  const overLay = document.querySelector("#overlay");
-  overLay.addEventListener("click", closeSidebar);
-}
-
-
 function categoriesAllWorks() {
   const categories = document.querySelectorAll("#all-works-nav ul li");
   const cards = document.querySelectorAll("#all-works section > div");

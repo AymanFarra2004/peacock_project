@@ -1,38 +1,9 @@
 @font-face {
-  font-family: "Avenir Arabic Medium";
-  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
-    format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "uniform rnd";
   src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter.ttc") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src: url("../../fonts/Fredoka-VariableFont_wdth,wght.ttf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "uniform rnd light";
-  src: url("../../fonts/Uniform Rounded Condensed Light.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
 
 * {
   margin: 0;
@@ -63,18 +34,13 @@
   z-index: 99999;
 }
 
-
-#all-works {
-  width: 100%;
-}
-
-#all-works .container {
+#all-blogs .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-#all-works-mobility {
+#all-blogs-mobility {
   width: 125px;
   height: 21px;
   display: flex;
@@ -82,19 +48,19 @@
   margin-top: 32px;
   align-items: center;
 }
-#all-works-mobility a {
+#all-blogs-mobility a {
   width: 36px;
   height: 21px;
   text-decoration: none;
 }
-#all-works-mobility p {
+#all-blogs-mobility p {
   height: 21px;
   font-family: "Avenir Arabic Medium", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0%;
 }
-#all-works-mobility a {
+#all-blogs-mobility a {
   width: 39px;
   height: 21px;
   font-family: "Avenir Arabic Medium", sans-serif;
@@ -103,23 +69,23 @@
   letter-spacing: 0%;
   color: rgba(180, 180, 180, 1);
 }
-#all-works-mobility a:hover {
+#all-blogs-mobility a:hover {
   color: rgba(254, 216, 95, 1);
 }
-#all-works-mobility > p {
+#all-blogs-mobility > p {
   width: 55px;
   color: rgba(30, 164, 139, 1);
 }
 
-#all-works main {
+#all-blogs main {
   width: 688px;
   height: 108px;
-  margin-top: 32px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#all-works main h1 {
+#all-blogs main h1 {
   width: 141px;
   height: 35px;
   font-family: "uniform rnd", sans-serif;
@@ -130,7 +96,7 @@
   text-align: center;
   color: rgba(52, 52, 52, 1);
 }
-#all-works main p {
+#all-blogs main p {
   width: 100%;
   height: 61px;
   margin-top: 12px;
@@ -143,98 +109,66 @@
   color: rgba(52, 52, 52, 1);
 }
 
-#all-works-nav {
-  width: 604px;
-  height: 44px;
-  margin-top: 48px;
-}
-#all-works-nav ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  list-style: none;
-}
-
-#all-works-nav ul li {
-  padding: 12.5px 12px;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: rgba(180, 180, 180, 1);
-  cursor: pointer;
-}
-#all-works-nav ul li:nth-child(1) {
-  color: rgba(30, 164, 139, 1);
-}
-
-#all-works section {
+#all-blogs section {
   width: 933px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(394px, 1fr));
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 32px;
 }
-#all-works section > div {
+.blog-card {
   width: 295px;
   height: 394px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
-.all-works-image {
+.all-blogs-image {
   width: 295px;
   height: 394px;
   border-radius: 40px;
   object-fit: cover;
 }
 
-.all-works-card-info {
-  width: 240px;
-  height: 0;
+.all-blogs-card-info {
+  width: 247px;
+  height: 135px;
+  margin-top: 24px;
   overflow: hidden;
-  position: absolute;
-  top: 20px;
-  left: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
-  transition: height 0.5s ease-in-out;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.all-works-card-info p {
-  font-family: "Fredoka";
+.all-blogs-card-info h2 {
   width: 199px;
-  height: 52px;
+  height: 26px;
+  font-family: "uniform rnd";
   color: white;
   font-weight: 400;
   font-size: 24px;
   line-height: 110%;
   letter-spacing: 0%;
-  position: absolute;
-  top: 24px;
-  left: 24px;
 }
-.all-works-card-info img:nth-of-type(1) {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: 24px;
-  bottom: 30px;
-}
-.all-works-card-info img:nth-of-type(2) {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 55px;
-  bottom: 32px;
+.all-blogs-card-info p {
+  font-family: "Fredoka";
+  width: 199px;
+  height: 52px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0%;
 }
 
-#all-works section > div:hover .all-works-card-info {
-  height: 140px;
-}
-
-#all-works-load-more {
-  width: 933px;
+#all-blogs-load-more {
+ width: 933px;
   height: 24px;
   margin-top: 34px;
   margin-bottom: 48px;
@@ -243,7 +177,7 @@
   justify-content: center;
 }
 
-#all-works-load-more p {
+#all-blogs-load-more p {
   width: 84px;
   height: 18px;
   font-family: "uniform rnd", sans-serif;
@@ -254,14 +188,14 @@
   text-align: center;
   color: rgba(30, 164, 139, 1);
 }
-#all-works-load-more img {
+#all-blogs-load-more img {
   width: 15px;
   height: 18px;
   margin-left: 13px;
 }
 
 
-#all-works-footer {
+#all-blogs-footer {
   background-color: rgba(254, 216, 95, 1);
   max-width: 1440px;
   height: 70px;
@@ -269,7 +203,7 @@
   align-items: center;
   justify-content: center;
 }
-#all-works-footer p {
+#all-blogs-footer p {
   font-family: "uniform rnd light";
   font-weight: 600;
   font-size: 18px;
@@ -278,3 +212,4 @@
   text-align: right;
   color: rgba(52, 52, 52, 1);
 }
+

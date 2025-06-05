@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="allBlogsStyle.css" />
+    <link rel="stylesheet" href="../header/headerStyle.css" />
+    <link rel="stylesheet" href="../side_bar/sideBarStyle.css" />
+  </head>
+  <body>
+    <!--       mouse crusor       -->
+    <div id="mouse">
+      <div class="outer-circle">
+        <div class="inner-circle"></div>
+      </div>
+    </div>
+
+    <!--         side bar                -->
+    <!--                                       -->
+
+    <div id="sidebar-container">
+      <div id="side-bar">
+        <header id="header-sidebar">
+          <img
+            id="logo-sidebar"
+            src="../../images/logo-peacock.svg"
+            alt="Peackok logo"
+          />
+
+          <a onclick="closeSidebar()"
+            ><img
+              id="back-arrow-sidebar"
+              src="../../images/arrow-back.svg"
+              alt="back arrow"
+          /></a>
+        </header>
+        <div id="list-sidebar">
+          <ul>
+            <li><a href="#home"></a>Home</li>
+            <li><a href="#aboutUs"></a>About Us</li>
+            <li><a href="#services"></a>Services</li>
+            <li><a href="#workUs"></a>Work Us</li>
+            <li><a href="#blogs"></a>Blogs</li>
+            <li><a href="#partners"></a>Success Partners</li>
+            <li><a href="#contactUs"></a>Contact Us</li>
+          </ul>
+
+          <input
+            id="request-btn-sidebar"
+            type="button"
+            value="Request Service"
+          />
+        </div>
+
+        <footer id="footer-sidebar">
+          <div id="social-media-sidebar">
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/whatsapp-icon-gray.svg"
+                black="../../images/whatsapp-icon-black.svg"
+                gray="../../images/whatsapp-icon-gray.svg"
+                alt="whatsapp icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/x-icon-gray.svg"
+                black="../../images/x-icon-black.svg"
+                gray="../../images/x-icon-gray.svg"
+                alt="x icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/telegram-icon-gray.svg"
+                black="../../images/telegram-icon-black.svg"
+                gray="../../images/telegram-icon-gray.svg"
+                alt="telegram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/instgram-icon-gray.svg"
+                black="../../images/instgram-icon-black.svg"
+                gray="../../images/instgram-icon-gray.svg"
+                alt="instagram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/behance-icon-gray.svg"
+                black="../../images/behance-icon-black.svg"
+                gray="../../images/behance-icon-gray.svg"
+                alt="be icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/linkedin-icon-gray.svg"
+                black="../../images/linkedin-icon-black.svg"
+                gray="../../images/linkedin-icon-gray.svg"
+                alt="linkedin icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/facebook-icon-gray.svg"
+                black="../../images/facebook-icon-black.svg"
+                gray="../../images/facebook-icon-gray.svg"
+                alt="facebook icon"
+            /></a>
+          </div>
+          <div>
+            <a class="arabic-sidebar">العربية</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!--          over lay of side bar          -->
+    <div id="overlay"></div>
+
+    <div id="all-blogs">
+      <!--                                       -->
+      <!--           header           -->
+      <!--                                       -->
+      <header Class="header-header">
+        <img
+          class="logo-header"
+          src="../../images/logo-peacock.svg"
+          alt="Peackok logo"
+        />
+
+        <div class="social-media-header">
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/whatsapp-icon-gray.svg"
+              black="../../images/whatsapp-icon-black.svg"
+              gray="../../images/whatsapp-icon-gray.svg"
+              white="../../images/whatsapp-white.svg"
+              alt="whatsapp icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/x-icon-gray.svg"
+              black="../../images/x-icon-black.svg"
+              gray="../../images/x-icon-gray.svg"
+              white="../../images/x-white.svg"
+              alt="x icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/telegram-icon-gray.svg"
+              black="../../images/telegram-icon-black.svg"
+              gray="../../images/telegram-icon-gray.svg"
+              white="../../images/telegram-white.svg"
+              alt="telegram icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/instgram-icon-gray.svg"
+              black="../../images/instgram-icon-black.svg"
+              gray="../../images/instgram-icon-gray.svg"
+              white="../../images/instgram-white.svg"
+              alt="instagram icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/behance-icon-gray.svg"
+              black="../../images/behance-icon-black.svg"
+              gray="../../images/behance-icon-gray.svg"
+              white="../../images/be-white.svg"
+              alt="be icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/linkedin-icon-gray.svg"
+              black="../../images/linkedin-icon-black.svg"
+              gray="../../images/linkedin-icon-gray.svg"
+              white="../../images/linkedin-white.svg"
+              alt="linkedin icon"
+          /></a>
+          <a
+            ><img
+              class="icons-header icon"
+              src="../../images/facebook-icon-gray.svg"
+              black="../../images/facebook-icon-black.svg"
+              gray="../../images/facebook-icon-gray.svg"
+              white="../../images/facebook-white.svg"
+              alt="facebook icon"
+          /></a>
+        </div>
+
+        <nav class="nav-bar-header">
+          <a class="arabic-header">العربية</a>
+
+          <div class="sidebar-btn">
+            <img src="../../images/sidebar-btn-black.svg" alt="frame icon" />
+          </div>
+        </nav>
+      </header>
+
+      <!--                                       -->
+      <!--           all blogs content           -->
+      <!--                                       -->
+      <div class="container">
+      <div id="all-blogs-mobility">
+        <a href="../../../index.html#home-container">Home</a>
+        <div><img src="../../images/mobility-arrow.svg" /></div>
+        <p>All Work</p>
+      </div>
+
+      <main>
+        <h1>All Blogs</h1>
+        <p>
+          We provide you with services of the highest quality and a variety of
+          technological services and products that meet customer needs and
+          contribute to improving operations and increasing efficiency. In
+          various sectors, including software and devices
+        </p>
+      </main>
+
+      <section>
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Graphic Design</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img
+            src="../../images/graphic-design2-.jpg"
+            class="all-blogs-image"
+          />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Graphic Design</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/video-editor.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Graphic Design</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/html.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Graphic Design</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/world-planet.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Graphic Design</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/graphic-design.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Social Media</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/mobile.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Social Media</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/social-media1.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Social Media</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/laptop.jpg" class="all-blogs-image" />
+        </div>
+
+        <div class="blog-card">
+          <div class="all-blogs-card-info">
+            <h2>Social Media</h2>
+            <p>
+              This text is an example of a text that can be replaced in the same
+              space.
+            </p>
+          </div>
+          <img src="../../images/desktop1.jpg" class="all-blogs-image" />
+        </div>
+      </section>
+      <div id="all-blogs-load-more">
+        <p>Load More</p>
+          <img src="../../images/all-works-down-arrow.svg" />
+      </div>
+    </div>
+    <footer id="all-blogs-footer">
+     <p>Copyright © Peacock Company.</p>
+   </footer>
+    </div>
+    <script src="../header/header.js"></script>
+    <script src="../side_bar/sideBar.js"></script>
+    <script src="allBlogs.js"></script>
+  </body>
+</html>

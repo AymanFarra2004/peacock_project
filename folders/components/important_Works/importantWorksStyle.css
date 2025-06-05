@@ -152,6 +152,7 @@
   margin-bottom: 17px;
   font-size: 18px;
   color: rgb(150, 150, 150);
+  cursor: pointer;
 }
 #categories ul :nth-child(1) {
   color: white;
@@ -226,6 +227,7 @@
   color: rgba(255, 255, 255, 1);
   background-position: right;
   transition: background-position 0.5s ease, color 0.5s ease;
+  cursor: pointer;
 }
 #works-btn:hover {
   background-position: left;

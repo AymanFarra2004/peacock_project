@@ -144,6 +144,7 @@ fetch("folders/components/blog_Agency/blog.html")
     document.getElementById("blog-agency-container").innerHTML = data;
 
     blogChangeArrows();
+    openAllBlogsPage();
   });
 
 
