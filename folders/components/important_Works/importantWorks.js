@@ -20,6 +20,13 @@ function cateListanimation() {
   });
 }
 
+function openAllWorksPage() {
+  document.getElementById("works-btn").addEventListener("click", function () {
+  window.location.href = "folders/components/all_works/allWorks.html";
+});
+}
+
+
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
@@ -65,6 +72,7 @@ fetch("folders/rotating_text/rotatingText.html")
       .querySelector("text")
       .setAttribute("fill", "rgba(255, 255, 255, 1)");
   });
+
 
 /* function infoBox() {
   const boxName = [

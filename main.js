@@ -123,7 +123,9 @@ fetch("folders/components/important_Works/importantWorks.html")
 
     //coloring social media sideBar icons
     coloringIconsGray2Black();
+    openAllWorksPage();
   });
+
 
 //blog agency style
 const blogStyleCSSId = "blogAgency-css";
@@ -142,6 +144,7 @@ fetch("folders/components/blog_Agency/blog.html")
 
     blogChangeArrows();
   });
+
 
 //partners style
 const partnersStyleCSSId = "partners-css";
@@ -162,6 +165,7 @@ fetch("folders/components/partners/partners.html")
     partnersChangeArrows();
   });
 
+
 //said about us style
 const aboutStyleCSSId = "about-us-css";
 if (!document.getElementById(aboutStyleCSSId)) {
@@ -181,8 +185,7 @@ fetch("folders/components/said_aboutUs/saidAboutUs.html")
     swipeBySliderBtns();
   });
 
-
-  //contact us style
+//contact us style
 const contactStyleCSSId = "contact-us-css";
 if (!document.getElementById(contactStyleCSSId)) {
   const contactLink = document.createElement("link");
@@ -192,8 +195,8 @@ if (!document.getElementById(contactStyleCSSId)) {
   document.head.appendChild(contactLink);
 }
 
-  //contact us page
-  fetch("folders/components/contact/contact.html")
+//contact us page
+fetch("folders/components/contact/contact.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("contact-us-container").innerHTML = data;
@@ -201,3 +204,5 @@ if (!document.getElementById(contactStyleCSSId)) {
     customSelect();
     regularExpEmail();
   });
+
+
