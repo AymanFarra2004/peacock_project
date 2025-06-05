@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 console.log(window.innerWidth);
+
 //sideBar style
 const sideBarCssId = "sidebar-css";
 if (!document.getElementById(sideBarCssId)) {
