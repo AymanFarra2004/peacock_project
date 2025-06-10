@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="blogDetailsStyle.css" />
+    <link rel="stylesheet" href="../header/headerStyle.css" />
+    <link rel="stylesheet" href="../side_bar/sideBarStyle.css" />
+  </head>
+  <body>
+    <div id="mouse">
+      <div class="outer-circle">
+        <div class="inner-circle"></div>
+      </div>
+    </div>
+    <div id="blogDetails-box">
+      <!--       mouse crusor       -->
+
+      <!--         side bar                -->
+      <div id="sidebar-container">
+        <div id="side-bar">
+          <header id="header-sidebar">
+            <img
+              id="logo-sidebar"
+              src="../../images/logo-peacock.svg"
+              alt="Peackok logo"
+            />
+
+            <a onclick="closeSidebar()"
+              ><img
+                id="back-arrow-sidebar"
+                src="../../images/arrow-back.svg"
+                alt="back arrow"
+            /></a>
+          </header>
+          <div id="list-sidebar">
+            <ul>
+              <li><a href="#home"></a>Home</li>
+              <li><a href="#aboutUs"></a>About Us</li>
+              <li><a href="#services"></a>Services</li>
+              <li><a href="#workUs"></a>Work Us</li>
+              <li><a href="#blogs"></a>Blogs</li>
+              <li><a href="#partners"></a>Success Partners</li>
+              <li><a href="#contactUs"></a>Contact Us</li>
+            </ul>
+
+            <input
+              id="request-btn-sidebar"
+              type="button"
+              value="Request Service"
+            />
+          </div>
+
+          <footer id="footer-sidebar">
+            <div id="social-media-sidebar">
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/whatsapp-icon-gray.svg"
+                  black="../../images/whatsapp-icon-black.svg"
+                  gray="../../images/whatsapp-icon-gray.svg"
+                  alt="whatsapp icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/x-icon-gray.svg"
+                  black="../../images/x-icon-black.svg"
+                  gray="../../images/x-icon-gray.svg"
+                  alt="x icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/telegram-icon-gray.svg"
+                  black="../../images/telegram-icon-black.svg"
+                  gray="../../images/telegram-icon-gray.svg"
+                  alt="telegram icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/instgram-icon-gray.svg"
+                  black="../../images/instgram-icon-black.svg"
+                  gray="../../images/instgram-icon-gray.svg"
+                  alt="instagram icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/behance-icon-gray.svg"
+                  black="../../images/behance-icon-black.svg"
+                  gray="../../images/behance-icon-gray.svg"
+                  alt="be icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/linkedin-icon-gray.svg"
+                  black="../../images/linkedin-icon-black.svg"
+                  gray="../../images/linkedin-icon-gray.svg"
+                  alt="linkedin icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/facebook-icon-gray.svg"
+                  black="../../images/facebook-icon-black.svg"
+                  gray="../../images/facebook-icon-gray.svg"
+                  alt="facebook icon"
+              /></a>
+            </div>
+            <div>
+              <a class="arabic-sidebar">العربية</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <!--          over lay of side bar          -->
+      <div id="overlay"></div>
+
+      <!--        blogDetails page                -->
+      <div id="blogDetails">
+        <!--       blogDetails header           -->
+        <div id="blogDetails-header">
+          <header Class="header-header">
+            <img
+              class="logo-header"
+              src="../../images/logo-peacock.svg"
+              alt="Peackok logo"
+            />
+
+            <div class="social-media-header">
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/whatsapp-icon-gray.svg"
+                  black="../../images/whatsapp-icon-black.svg"
+                  gray="../../images/whatsapp-icon-gray.svg"
+                  white="../../images/whatsapp-white.svg"
+                  alt="whatsapp icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/x-icon-gray.svg"
+                  black="../../images/x-icon-black.svg"
+                  gray="../../images/x-icon-gray.svg"
+                  white="../../images/x-white.svg"
+                  alt="x icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/telegram-icon-gray.svg"
+                  black="../../images/telegram-icon-black.svg"
+                  gray="../../images/telegram-icon-gray.svg"
+                  white="../../images/telegram-white.svg"
+                  alt="telegram icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/instgram-icon-gray.svg"
+                  black="../../images/instgram-icon-black.svg"
+                  gray="../../images/instgram-icon-gray.svg"
+                  white="../../images/instgram-white.svg"
+                  alt="instagram icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/behance-icon-gray.svg"
+                  black="../../images/behance-icon-black.svg"
+                  gray="../../images/behance-icon-gray.svg"
+                  white="../../images/be-white.svg"
+                  alt="be icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/linkedin-icon-gray.svg"
+                  black="../../images/linkedin-icon-black.svg"
+                  gray="../../images/linkedin-icon-gray.svg"
+                  white="../../images/linkedin-white.svg"
+                  alt="linkedin icon"
+              /></a>
+              <a
+                ><img
+                  class="icons-header icon"
+                  src="../../images/facebook-icon-gray.svg"
+                  black="../../images/facebook-icon-black.svg"
+                  gray="../../images/facebook-icon-gray.svg"
+                  white="../../images/facebook-white.svg"
+                  alt="facebook icon"
+              /></a>
+            </div>
+
+            <nav class="nav-bar-header">
+              <a class="arabic-header">العربية</a>
+
+              <div class="sidebar-btn">
+                <img
+                  src="../../images/sidebar-btn-black.svg"
+                  alt="frame icon"
+                />
+              </div>
+            </nav>
+          </header>
+        </div>
+
+        <div class="container">
+          <div id="blogDetails-mobility">
+            <a href="../../../index.html#home-container">Home</a>
+            <div><img src="../../images/mobility-arrow.svg" /></div>
+            <a href="../../components/all_blogs/allBlogs.html">All Blogs</a>
+            <div><img src="../../images/mobility-arrow.svg" /></div>
+            <p>Blog Details</p>
+          </div>
+          <main>
+            <h1>
+              Literature surrounded insensible at indulgence or to admiration
+            </h1>
+            <div>
+              <div class="views-info">
+                <img src="../../images/eye-icon.svg" />
+                <p>32 Viwes</p>
+              </div>
+
+              <div class="comments-info">
+                <img src="../../images/comment-icon.svg" />
+                <p>10 Comments</p>
+              </div>
+            </div>
+            <div class="blogDetails-image">
+              <img src="../../images/blog-details-image.png" />
+            </div>
+
+            <div class="blogDetails-text1">
+              <h2>
+                Literature surrounded insensible at indulgence or to admiration
+              </h2>
+              <p>
+                A.The free speech rights of students have often been
+                violated.<br />
+                B. Limitations on civil liberties have occured during
+                wartime.<br />
+                C. The rights of protesters are absolute under the
+                Constitution.<br />
+                D. An expansion of individual rights in criminal cases has
+                occured.
+              </p>
+            </div>
+
+            <div class="blogDetails-text2">
+              <h2>
+                Literature surrounded insensible at indulgence or to admiration
+              </h2>
+              <div>
+                <p>
+                  <img src="../../images/correct-icon.svg" /> The free speech
+                  rights of students have often been violated.<br />
+                  <img src="../../images/correct-icon.svg" /> Limitations on
+                  civil liberties have occured during wartime.<br />
+                  <img src="../../images/correct-icon.svg" /> The rights of
+                  protesters are absolute under the Constitution.<br />
+                  <img src="../../images/correct-icon.svg" /> An expansion of
+                  individual rights in criminal cases has occured.
+                </p>
+              </div>
+            </div>
+
+            <hr class="blogDetails-divider" />
+
+            <div id="blogDetails-middle-text">
+              <h2>Literature surrounded insensible at indulgence</h2>
+              <p>
+                Literature surrounded insensible at indulgence or to admiration
+                remarkably. Matter future lovers desire marked boy use. Chamber
+                reached do he nothing be....
+              </p>
+            </div>
+
+            <div id="blogDetails-middle-box">
+              <img src="../../images/blog-details-image2.png" />
+              <div>
+                <p>
+                  Literature surrounded insensible at indulgence <br />or to
+                  admiration remarkably. Matter future lovers <br />desire
+                  marked boy use. Chamber reached do he <br />nothing be....
+                </p>
+
+                <p>
+                  Literature surrounded insensible at indulgence <br />or to
+                  admiration remarkably. Matter future lovers <br />desire
+                  marked boy use. Chamber reached do he <br />nothing be....
+                </p>
+
+                <p>Literature surrounded insensible at indulgence</p>
+              </div>
+            </div>
+
+            <div class="blogDetails-textUnder-middleBox">
+              <p>
+                Literature surrounded insensible at indulgence or to admiration
+                remarkably. Matter future <br />lovers desire marked boy use.
+                Chamber reached do he nothing be....
+              </p>
+            </div>
+          </main>
+
+          <article id="comments">
+            <div class="comments-no">
+              <div></div>
+              <h3>2 Comment</h3>
+            </div>
+
+            <div class="comments-content">
+              <div>
+                <div class="user-image">
+                  <img src="../../images/user-comment.png" alt="user comment" />
+                </div>
+                <div class="comment-content">
+                  <h3>User Name</h3>
+                  <h4>June 22,2022</h4>
+                  <p>
+                    Literature surrounded insensible at indulgence or to
+                    admiration remarkably. Matter future lovers desire marked
+                    boy use Chamber reached do he nothing
+                  </p>
+                </div>
+              </div>
+
+              <hr />
+
+              <div>
+                <div class="user-image">
+                  <img src="../../images/user-comment.png" alt="user comment" />
+                </div>
+                <div class="comment-content">
+                  <h3>User Name</h3>
+                  <h4>June 22,2022</h4>
+                  <p>
+                    Literature surrounded insensible at indulgence or to
+                    admiration remarkably. Matter future lovers desire marked
+                    boy use Chamber reached do he nothing
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </article>
+
+          <article id="add-comment">
+            <div class="post-comment">
+              <div></div>
+              <h3>Post Comment</h3>
+            </div>
+
+            <div id="post">
+              <form action="">
+                <input
+                  type="no"
+                  id="post-moblieNo"
+                  name="mobile-No"
+                  placeholder="Mobile number"
+                />
+                <input
+                  type="email"
+                  id="post-Email"
+                  name="Email"
+                  placeholder="Email"
+                />
+                <input
+                  type="message"
+                  id="post-description"
+                  name="description"
+                  placeholder="Description"
+                />
+              </form>
+              <label>
+                <input type="checkbox" name="save-info" value="yes" /> <span>Save my
+                name, email, and website in this browser for the next time I
+                comment.</span>
+              </label>
+              <button>
+                Post Comment
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+        <footer id="blogDetails-footer">
+          Copyright © Peacock Company.
+        </footer>
+
+      <script src="../header/header.js"></script>
+      <script src="../utils/utils.js"></script>
+      <script src="../side_bar/sideBar.js"></script>
+      <script src="blogDetails.js"></script>
+  </body>
+</html>

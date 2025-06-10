@@ -13,18 +13,17 @@ fetch("folders/components/header/header.html")
   });
 
 fetch("folders/rotating_text/rotatingText.html")
-  .then((res) => res.text())
-  .then((data) => {
+.then((res) => res.text())
+.then((data) => {
     document.querySelector("#said-rotate-text").innerHTML = data;
   });
 
 
-function swipeBySliderBtns() {
-  const sliderBtns = document.querySelectorAll("#said-slide-btns img");
+  
   const cardsContainer = document.querySelector("#said-slider-wrapper");
-  const cardWidth = 662 + 50;
-
-  let currentIndex = 0;
+  const overlay = document.querySelector(".said-slider-overlay");
+  const cards = cardsContainer.querySelectorAll(".card");
+  const sliderBtns = document.querySelectorAll("#said-slide-btns img");
 
 function updateSliderBtns() {
   sliderBtns.forEach((btn, index) => {
@@ -56,13 +55,9 @@ function updateSliderBtns() {
     currentIndex = 3;
     updateSliderBtns();
   });
-}
 
-function slider() {
-  const cardsContainer = document.querySelector("#said-slider-wrapper");
-  const overlay = document.querySelector(".said-slider-overlay");
-  const cards = cardsContainer.querySelectorAll(".card");
-  const sliderBtns = document.querySelectorAll("#said-slide-btns img");
+
+
 
   let startX = 0;
   let endX = 0;
@@ -116,4 +111,3 @@ function slider() {
     endX = e.clientX;
     handleSwipe();
   });
-}

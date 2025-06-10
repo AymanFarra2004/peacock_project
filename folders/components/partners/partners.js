@@ -1,47 +1,46 @@
-function partnersChangeArrows() {
-  const upArrow = document.querySelector(
+  const upArrowPartners = document.querySelector(
     "#partners-change-arrows div:nth-child(1) img"
   );
-  const downArrow = document.querySelector(
+  const downArrowPartners = document.querySelector(
     "#partners-change-arrows div:nth-child(2) img"
   );
 
-  upArrow.addEventListener("click", () => {
-    if (upArrow.getAttribute("src") === upArrow.getAttribute("black")) {
+  upArrowPartners.addEventListener("click", () => {
+    if (upArrowPartners.getAttribute("src") === upArrowPartners.getAttribute("black")) {
       if (
-        upArrow.style.transform === "scaleY(-1)" ||
-        downArrow.style.transform === "scaleY(-1)"
+        upArrowPartners.style.transform === "scaleY(-1)" ||
+        downArrowPartners.style.transform === "scaleY(-1)"
       ) {
-        upArrow.style.transform = "scaleY(1)";
-        downArrow.style.transform = "scaleY(1)";
+        upArrowPartners.style.transform = "scaleY(1)";
+        downArrowPartners.style.transform = "scaleY(1)";
       } else {
-        upArrow.style.transform = "scaleY(-1)";
-        downArrow.style.transform = "scaleY(-1)";
+        upArrowPartners.style.transform = "scaleY(-1)";
+        downArrowPartners.style.transform = "scaleY(-1)";
       }
 
-      upArrow.src = upArrow.getAttribute("gray");
-      downArrow.src = downArrow.getAttribute("black");
+      upArrowPartners.src = upArrowPartners.getAttribute("gray");
+      downArrowPartners.src = downArrowPartners.getAttribute("black");
     }
   });
 
-  downArrow.addEventListener("click", () => {
-    if (downArrow.getAttribute("src") === downArrow.getAttribute("black")) {
+  downArrowPartners.addEventListener("click", () => {
+    if (downArrowPartners.getAttribute("src") === downArrowPartners.getAttribute("black")) {
       if (
-        upArrow.style.transform === "scaleY(-1)" ||
-        downArrow.style.transform === "scaleY(-1)"
+        upArrowPartners.style.transform === "scaleY(-1)" ||
+        downArrowPartners.style.transform === "scaleY(-1)"
       ) {
-        upArrow.style.transform = "scaleY(1)";
-        downArrow.style.transform = "scaleY(1)";
+        upArrowPartners.style.transform = "scaleY(1)";
+        downArrowPartners.style.transform = "scaleY(1)";
       } else {
-        downArrow.style.transform = "scaleY(-1)";
-        upArrow.style.transform = "scaleY(-1)";
+        downArrowPartners.style.transform = "scaleY(-1)";
+        upArrowPartners.style.transform = "scaleY(-1)";
       }
 
-      downArrow.src = upArrow.getAttribute("gray");
-      upArrow.src = downArrow.getAttribute("black");
+      downArrowPartners.src = upArrowPartners.getAttribute("gray");
+      upArrowPartners.src = downArrowPartners.getAttribute("black");
     }
   });
-}
+
 
 fetch("folders/components/header/header.html")
   .then((res) => res.text())

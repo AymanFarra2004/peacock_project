@@ -4,19 +4,28 @@
   font-weight: 500; 
   font-style: normal;
 }
+/* #header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+} */
+ #header-container {
+  width: 100%;
+ }
 
 .header-header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   max-width: 1440px;
-  height: 43.5px;
-  margin-top: 43.5px;
-  margin-left: 75px;
-  margin-right: 75px;
+  height: 58px;
+  margin: 58px auto 0 auto; 
 }
 .logo-header {
-  width: 91.5px;
-  height: 43.5px;
+  width: 117px;
+  height: 56px;
 }
 
 .social-media-header {
@@ -26,19 +35,20 @@
 }
 
 .icons-header {
-  height: 23.2px;
-  width: 23.5px;
+  height: 31px;
+  width: 31px;
+  cursor: pointer;
 }
 
 
 .nav-bar-header{
   display: flex;
   align-items: center;
-  gap: 11.2px;
+  gap: 20px;
 }
 
 .arabic-header{
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Avenir Arabic Medium", sans-serif;
     font-weight: 500;
     line-height: 160%;

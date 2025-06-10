@@ -59,6 +59,8 @@
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0%;
+  width: 55px;
+  color: rgba(30, 164, 139, 1);
 }
 #all-blogs-mobility a {
   width: 39px;
@@ -72,10 +74,7 @@
 #all-blogs-mobility a:hover {
   color: rgba(254, 216, 95, 1);
 }
-#all-blogs-mobility > p {
-  width: 55px;
-  color: rgba(30, 164, 139, 1);
-}
+
 
 #all-blogs main {
   width: 688px;
@@ -168,7 +167,7 @@
 }
 
 #all-blogs-load-more {
- width: 933px;
+  width: 933px;
   height: 24px;
   margin-top: 34px;
   margin-bottom: 48px;
@@ -187,11 +186,13 @@
   letter-spacing: 0%;
   text-align: center;
   color: rgba(30, 164, 139, 1);
+  cursor: pointer;
 }
 #all-blogs-load-more img {
   width: 15px;
   height: 18px;
   margin-left: 13px;
+  cursor: pointer;
 }
 
 

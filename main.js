@@ -1,50 +1,60 @@
-//header style
-document.addEventListener("DOMContentLoaded", function () {
-  const headercssId = "headerStyle-css";
-  if (!document.getElementById(headercssId)) {
-    const headerLink = document.createElement("link");
-    headerLink.id = headercssId;
-    headerLink.rel = "stylesheet";
-    headerLink.href = "folders/components/header/headerStyle.css";
-    document.head.appendChild(headerLink);
-  }
-});
 console.log(window.innerWidth);
-
-//sideBar style
-const sideBarCssId = "sidebar-css";
-if (!document.getElementById(sideBarCssId)) {
-  const sidebarLink = document.createElement("link");
-  sidebarLink.id = sideBarCssId;
-  sidebarLink.rel = "stylesheet";
-  sidebarLink.href = "folders/components/side_bar/sideBarStyle.css";
-  document.head.appendChild(sidebarLink);
-}
 
 //sideBar
 fetch("folders/components/side_bar/sideBar.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("sidebar-container").innerHTML = data;
-    //coloring social media sideBar icons
-    coloringIconsGray2Black();
+    
+    
+    const sidebarjsId = "sidebarScript-js";
+    if (!document.getElementById(sidebarjsId)) {
+      const sidebarScirpt = document.createElement("script");
+      sidebarScirpt.id = sidebarjsId;
+      sidebarScirpt.src = "folders/components/side_bar/sideBar.js";
+      document.head.appendChild(sidebarScirpt);
+    }
   });
 
-//home style
-const homeStyleCSSId = "home-css";
-if (!document.getElementById(homeStyleCSSId)) {
-  const homeLink = document.createElement("link");
-  homeLink.id = homeStyleCSSId;
-  homeLink.rel = "stylesheet";
-  homeLink.href = "folders/components/home/homeStyle.css";
-  document.head.appendChild(homeLink);
+
+const headerjsId = "headerScript-js";
+if (!document.getElementById(headerjsId)) {
+  const headerScirpt = document.createElement("script");
+  headerScirpt.id = headerjsId;
+  headerScirpt.src = "folders/components/header/header.js";
+  document.head.appendChild(headerScirpt);
 }
+
+//request service
+fetch("folders/components/request_service/requestService.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("requestService-container").innerHTML = data;
+
+    const requestjsId = "requestScript-js";
+    if (!document.getElementById(requestjsId)) {
+      const requestScirpt = document.createElement("script");
+      requestScirpt.id = requestjsId;
+      requestScirpt.src = "folders/components/request_service/request.js";
+      document.head.appendChild(requestScirpt);
+      console.log("hhhh");
+    }
+  });
 
 //home
 fetch("folders/components/home/home.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("home-container").innerHTML = data;
+    
+    
+    const homejsId = "homeScript-js";
+    if (!document.getElementById(homejsId)) {
+      const homeScirpt = document.createElement("script");
+      homeScirpt.id = homejsId;
+      homeScirpt.src = "folders/components/home/home.js";
+      document.head.appendChild(homeScirpt);
+    }
   });
 
 //mouse wrap
@@ -55,66 +65,37 @@ document.addEventListener("mousemove", (e) => {
   }px)`;
 });
 
-//about us Style
-const aboutusStyleCSSId = "aboutus-css";
-if (!document.getElementById(aboutusStyleCSSId)) {
-  const homeLink = document.createElement("link");
-  homeLink.id = aboutusStyleCSSId;
-  homeLink.rel = "stylesheet";
-  homeLink.href = "folders/components/about_Us/aboutUsStyle.css";
-  document.head.appendChild(homeLink);
-}
-
 //about US
 fetch("folders/components/about_Us/aboutUs.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("about-us-container").innerHTML = data;
-
-    arrowsAnimation();
-    loctionAnimation();
-    setInterval(loctionAnimation, 10000);
+    
+    
+    const aboutjsId = "aboutScript-js";
+    if (!document.getElementById(aboutjsId)) {
+      const aboutScirpt = document.createElement("script");
+      aboutScirpt.id = aboutjsId;
+      aboutScirpt.src = "folders/components/about_Us/aboutUs.js";
+      document.head.appendChild(aboutScirpt);
+    }
   });
-
-//servicesstyle
-const servicesStyleCSSId = "services-css";
-if (!document.getElementById(servicesStyleCSSId)) {
-  const servicesLink = document.createElement("link");
-  servicesLink.id = servicesStyleCSSId;
-  servicesLink.rel = "stylesheet";
-  servicesLink.href = "folders/components/our_services/servicesStyle.css";
-  document.head.appendChild(servicesLink);
-}
 
 //services
 fetch("folders/components/our_services/services.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#services-container").innerHTML = data;
+    
+    
+    const servicesjsId = "servicesScript-js";
+    if (!document.getElementById(servicesjsId)) {
+      const servicesScirpt = document.createElement("script");
+      servicesScirpt.id = servicesjsId;
+      servicesScirpt.src = "folders/components/our_services/services.js";
+      document.head.appendChild(servicesScirpt);
+    }
   });
-
-//rotating Text Style
-document.addEventListener("DOMContentLoaded", () => {
-  const rotatingTextcssId = "rotatingText-css";
-  if (!document.querySelector(rotatingTextcssId)) {
-    const rotatingLink = document.createElement("link");
-    rotatingLink.id = rotatingTextcssId;
-    rotatingLink.rel = "stylesheet";
-    rotatingLink.href = "folders/rotating_text/rotatingTextStyle.css";
-    document.head.appendChild(rotatingLink);
-  }
-});
-
-//imprtatnt works style
-const improtantStyleCSSId = "impotantWorks-css";
-if (!document.getElementById(improtantStyleCSSId)) {
-  const importantWorksLink = document.createElement("link");
-  importantWorksLink.id = improtantStyleCSSId;
-  importantWorksLink.rel = "stylesheet";
-  importantWorksLink.href =
-    "folders/components/important_Works/importantWorksStyle.css";
-  document.head.appendChild(importantWorksLink);
-}
 
 //imprtatnt works page
 fetch("folders/components/important_Works/importantWorks.html")
@@ -123,40 +104,32 @@ fetch("folders/components/important_Works/importantWorks.html")
     document.getElementById("works-container").innerHTML = data;
 
     //coloring social media sideBar icons
-    coloringIconsGray2Black();
-    openAllWorksPage();
+    
+    
+    const catejsId = "cateScript-js";
+    if (!document.getElementById(catejsId)) {
+      const cateScirpt = document.createElement("script");
+      cateScirpt.id = catejsId;
+      cateScirpt.src = "folders/components/important_Works/importantWorks.js";
+      document.head.appendChild(cateScirpt);
+    }
   });
 
-
-//blog agency style
-const blogStyleCSSId = "blogAgency-css";
-if (!document.getElementById(blogStyleCSSId)) {
-  const blogLink = document.createElement("link");
-  blogLink.id = blogStyleCSSId;
-  blogLink.rel = "stylesheet";
-  blogLink.href = "folders/components/blog_Agency/blogStyle.css";
-  document.head.appendChild(blogLink);
-}
 //blog Agency page
 fetch("folders/components/blog_Agency/blog.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("blog-agency-container").innerHTML = data;
 
-    blogChangeArrows();
-    openAllBlogsPage();
+    
+    const blogjsId = "blogScript-js";
+    if (!document.getElementById(blogjsId)) {
+      const blogScirpt = document.createElement("script");
+      blogScirpt.id = blogjsId;
+      blogScirpt.src = "folders/components/blog_Agency/blog.js";
+      document.head.appendChild(blogScirpt);
+    }
   });
-
-
-//partners style
-const partnersStyleCSSId = "partners-css";
-if (!document.getElementById(partnersStyleCSSId)) {
-  const partnersLink = document.createElement("link");
-  partnersLink.id = partnersStyleCSSId;
-  partnersLink.rel = "stylesheet";
-  partnersLink.href = "folders/components/partners/partensStyle.css";
-  document.head.appendChild(partnersLink);
-}
 
 //partners page
 fetch("folders/components/partners/partners.html")
@@ -164,38 +137,30 @@ fetch("folders/components/partners/partners.html")
   .then((data) => {
     document.getElementById("partners-container").innerHTML = data;
 
-    partnersChangeArrows();
+
+    const partnersjsId = "partnersScript-js";
+    if (!document.getElementById(partnersjsId)) {
+      const partnersScirpt = document.createElement("script");
+      partnersScirpt.id = partnersjsId;
+      partnersScirpt.src = "folders/components/partners/partners.js";
+      document.head.appendChild(partnersScirpt);
+    }
   });
 
-
-//said about us style
-const aboutStyleCSSId = "about-us-css";
-if (!document.getElementById(aboutStyleCSSId)) {
-  const aboutLink = document.createElement("link");
-  aboutLink.id = aboutStyleCSSId;
-  aboutLink.rel = "stylesheet";
-  aboutLink.href = "folders/components/said_aboutUs/saidAboutUsStyle.css";
-  document.head.appendChild(aboutLink);
-}
 //said about us page
 fetch("folders/components/said_aboutUs/saidAboutUs.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("said-aboutUs-container").innerHTML = data;
-
-    slider();
-    swipeBySliderBtns();
+    
+    const saidjsId = "saidScript-js";
+    if (!document.getElementById(saidjsId)) {
+      const saidScirpt = document.createElement("script");
+      saidScirpt.id = saidjsId;
+      saidScirpt.src = "folders/components/said_aboutUs/saidAboutUs.js";
+      document.head.appendChild(saidScirpt);
+    }
   });
-
-//contact us style
-const contactStyleCSSId = "contact-us-css";
-if (!document.getElementById(contactStyleCSSId)) {
-  const contactLink = document.createElement("link");
-  contactLink.id = contactStyleCSSId;
-  contactLink.rel = "stylesheet";
-  contactLink.href = "folders/components/contact/contactStyle.css";
-  document.head.appendChild(contactLink);
-}
 
 //contact us page
 fetch("folders/components/contact/contact.html")
@@ -203,8 +168,12 @@ fetch("folders/components/contact/contact.html")
   .then((data) => {
     document.getElementById("contact-us-container").innerHTML = data;
 
-    customSelect();
-    regularExpEmail();
+    
+    const contactjsId = "contactScript-js";
+    if (!document.getElementById(contactjsId)) {
+      const contactScirpt = document.createElement("script");
+      contactScirpt.id = contactjsId;
+      contactScirpt.src = "folders/components/contact/contact.js";
+      document.head.appendChild(contactScirpt);
+    }
   });
-
-

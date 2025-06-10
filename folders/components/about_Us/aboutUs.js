@@ -1,46 +1,51 @@
-
-
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
-    document.getElementById("about-header").innerHTML = data;
+    document.getElementById("aboutUs-header").innerHTML = data;
+    document
+      .getElementById("aboutUs-header")
+      .querySelector(".sidebar-btn")
+      .addEventListener("click", openSidebar);
 
+    //turn logo to black
     let logo = document
-      .querySelector("#about-header")
+      .querySelector("#aboutUs-header")
       .querySelector(".logo-header");
     logo.src = "folders/images/peackok-logo-black.svg";
 
     let icons = document
-      .querySelector("#about-header")
+      .querySelector("#aboutUs-header")
       .querySelectorAll(".icon");
 
     icons.forEach((icon) => {
       /* icon.classList.add("about-icon"); */
       icon.src = icon.getAttribute("black");
 
-      document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
+      //whatsapp
+      icons[0].setAttribute("white", "folders/images/whatsapp-white.svg");
+
+      //X
+      icons[1].setAttribute("white", "folders/images/x-white.svg");
+
+      icons[2].setAttribute("white", "folders/images/telegram-white.svg");
+
+      icons[3].setAttribute("white", "folders/images/instgram-white.svg");
+
+      icons[4].setAttribute("white", "folders/images/be-white.svg");
+
+      icons[5].setAttribute("white", "folders/images/linkedin-white.svg");
+
+      icons[6].setAttribute("white", "folders/images/facebook-white.svg");
+
+      //coloring social media header icons
+      coloringIconsBlack2white();
     });
-    //whatsapp
-    icons[0].setAttribute("white", "folders/images/whatsapp-white.svg");
-
-    //X
-    icons[1].setAttribute("white", "folders/images/x-white.svg");
-
-    icons[2].setAttribute("white", "folders/images/telegram-white.svg");
-
-    icons[3].setAttribute("white", "folders/images/instgram-white.svg");
-
-    icons[4].setAttribute("white", "folders/images/be-white.svg");
-
-    icons[5].setAttribute("white", "folders/images/linkedin-white.svg");
-
-    icons[6].setAttribute("white", "folders/images/facebook-white.svg");
-
-    //coloring social media header icons
-    coloringIconsBlack2white();
   });
 
-  
+arrowsAnimation();
+loctionAnimation();
+setInterval(loctionAnimation, 10000);
+
 function arrowsAnimation() {
   let whiteArrow = document.querySelector("#animate-arrow-white");
 

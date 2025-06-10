@@ -1,7 +1,7 @@
 coloringIconsGray2Black();
 openCloseSideBar();
 categoriesAllWorks();
-
+document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
 const mouseMove = document.getElementById("mouse");
 document.addEventListener("mousemove", (e) => {
   mouseMove.style.transform = `translate(${e.clientX - 50}px, ${

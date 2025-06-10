@@ -8,6 +8,7 @@ fetch("folders/components/header/header.html")
       .querySelector(".sidebar-btn")
       .addEventListener("click", openSidebar);
     coloringIconsGray2Black();
+    
   });
 
 fetch("folders/rotating_text/rotatingText.html")
@@ -16,13 +17,13 @@ fetch("folders/rotating_text/rotatingText.html")
     document.querySelector("#blog-rotate-text").innerHTML = data;
   });
 
-function openAllBlogsPage() {
+
   document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "folders/components/all_blogs/allBlogs.html";
 });
-}
 
-function blogChangeArrows() {
+
+
   const upArrow = document.querySelector(
     "#blog-change-arrows div:nth-child(1) img"
   );
@@ -65,4 +66,4 @@ function blogChangeArrows() {
       upArrow.src = upArrow.getAttribute("black");
     }
   });
-}
+

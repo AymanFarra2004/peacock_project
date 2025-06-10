@@ -21,23 +21,40 @@
 }
 
 #said-aboutUs {
-  height: 800px;
-  max-width: 1440px;
+  height: 900px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   background: linear-gradient(46.44deg, #ffffff 28.28%, #f8f8f8 95.36%);
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  box-sizing: border-box;
 }
-
+@media (min-width: 1440px) {
+  #said-aboutUs {
+    padding: 0 100px; 
+  }
+}
+@media (max-width: 1439px) {
+  #said-aboutUs {
+    padding: 0 75px; 
+  }
+}
 #said-aboutUs .container {
   display: flex;
   justify-content: space-between;
-  padding-inline: 75px;
+  /* padding-inline: 75px; */
+  align-items: center;
+  justify-content: center;
 }
+
 
 #said-aboutUs .container main {
   width: 400px;
   height: 370px;
-  margin-top: 211px;
+  margin-top: 178px;
+  position: relative;
 }
 
 #said-aboutUs .container main h1 {
@@ -64,15 +81,15 @@
 
 #said-aboutUs .green-arrow {
   position: absolute;
-  bottom: 50px;
-  left: 300px;
+  bottom: -130px;
+  left: 200px;
 }
 
 #said-aboutUs section {
   width: 762px;
   height: 452px;
   overflow: hidden;
-  margin-top: 127px;
+  margin-top: 150px;
   margin-left: 50px;
 }
 
@@ -166,6 +183,7 @@
   width: 662px;
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
   align-items: center;
   margin-top: 35px;
 }

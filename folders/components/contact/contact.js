@@ -22,6 +22,7 @@ fetch("folders/components/header/header.html")
       .addEventListener("click", openSidebar);
 
     coloringIconsBlack2white();
+    
   });
 
 fetch("folders/rotating_text/rotatingText.html")
@@ -30,7 +31,7 @@ fetch("folders/rotating_text/rotatingText.html")
     document.querySelector("#contact-rotate-text").innerHTML = data;
   });
 
-function customSelect() {
+
   const selected = document.querySelector(".selected-option");
   const optionsContainer = document.querySelector(".options");
   const options = document.querySelectorAll(".option");
@@ -59,9 +60,9 @@ function customSelect() {
       optionsContainer.style.display = "none";
     }
   });
-}
 
-function regularExpEmail() {
+
+
   document.querySelector("#contact-boxes form").onsubmit = function (e) {
     let email = document.querySelector("#email-input");
     let emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -71,4 +72,4 @@ function regularExpEmail() {
     alert("Please enter a valid email address.");
     }
   };
-}
+

@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
@@ -19,12 +19,51 @@
   font-weight: 500;
   font-style: normal;
 }
+#home-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) {
+  #home-box {
+    padding: 0 100px; 
+  }
+}
+@media (max-width: 1439px) {
+  #home-box {
+    padding: 0 75px; 
+  }
+}
+#container-home {
+  height: 900px;
+  width: 100%;
+  max-width: 1440px;
+}
+#home-header {
+  width: 100%;
+}
+#home {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+
+}
+#main-home {
+  width: 498px;
+  height: 443px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 #shape-home1 {
   width: 63px;
   height: 68px;
   position: absolute;
-  top: 37px;
+  top: -63px;
   left: 344px;
 }
 
@@ -32,30 +71,12 @@
   width: 39px;
   height: 49px;
   position: absolute;
-  top: 579px;
+  top: 479px;
   left: 368px;
-}
-
-#home {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-#main-home {
-  width: 498px;
-  height: 443px;
-  margin-left: 102px;
-  display: flex;
-  position: relative;
 }
 
 #text-home {
   margin: 0;
-  position: absolute;
-  top: 100px;
   font-family: "Fredoka";
   color: rgba(15, 23, 42, 1);
   width: 510px;
@@ -67,7 +88,7 @@
   width: 23px;
   height: 29px;
   position: absolute;
-  top: 190px;
+  top: 90px;
   left: 170px;
 }
 
@@ -87,8 +108,7 @@
   color: rgba(30, 164, 139, 1);
   width: 509px;
   height: 101px;
-  position: absolute;
-  top: 277px;
+  margin-top: 5px;
   z-index: 2;
 }
 
@@ -96,7 +116,7 @@
   width: 296px;
   height: 21px;
   position: absolute;
-  top: 365px;
+  top: 265px;
   border-style: hidden;
   border-width: 10px;
 }
@@ -104,8 +124,7 @@
 #request-btn-home {
   width: 214px;
   height: 70px;
-  position: absolute;
-  top: 410px;
+  margin-top: 25px;
   border-style: none;
   border-radius: 8px;
   background-color: rgba(254, 216, 95, 1);
@@ -118,10 +137,10 @@
 #images {
   width: 627px;
   height: 634px;
-  position: absolute;
-  top: 37px;
-  right: 102px;
+  margin-top: 37px;
+  margin-left: 40px;
   position: relative;
+  overflow: hidden;
 }
 
 .purble {
@@ -174,8 +193,6 @@
     border-top-right-radius 2s ease-in-out,
     border-bottom-right-radius 2s ease-in-out, height 2s ease-in-out;
 }
-
- */
 
 /* 
 @font-face {
@@ -356,7 +373,7 @@
 }
  */
 
-@font-face {
+/* @font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
@@ -377,7 +394,13 @@
   font-weight: 500;
   font-style: normal;
 }
-
+#home .container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #home {
   display: flex;
   margin-top: 153x;
@@ -388,49 +411,31 @@
 }
 
 #shape-home1 {
-  width: 56.6px;
-  height: 25.2px;
+  width: 93px;
+  height: 78px;
   position: absolute;
   top: 33.3px;
   left: 309px;
 }
-/* #shape-home1 {
-  width: 47.2px;
-  height: 21px;
-  position: absolute;
-  top: 27.8px;
-  left: 258px;
-} */
+
 
 #shape-home2 {
-  width: 35px;
-  height: 44px;
+  width: 39px;
+  height: 49px;
   position: absolute;
   top: 450px;
   left: 331.2px;
 }
-/* #shape-home2 {
-  width: 29.2px;
-  height: 36.7px;
-  position: absolute;
-  top: 434.2px;
-  left: 276px;
-} */
+
 
 #main-home {
-  width: 448.2px;
-  height: 398.6px;
+  width: 499px;
+  height: 343px;
   margin-left: 92px;
   display: flex;
   position: relative;
 }
-/* #main-home {
-  width: 373.5px;
-  height: 332.2px;
-  margin-left: 76.5px;
-  display: flex;
-  position: relative;
-} */
+
 
 #text-home {
   margin: 0;
@@ -438,21 +443,10 @@
   top: 120px;
   font-family: "Fredoka";
   color: rgba(15, 23, 42, 1);
-  width: 446.7px;
-  height: auto;
-  font-size: 64.8px;
+  width: 496px;
+  height: 121px;
+  font-size: 72px;
 }
-/* 
-#text-home {
-  margin: 0;
-  position: absolute;
-  top: 100px;
-  font-family: "Fredoka";
-  color: rgba(15, 23, 42, 1);
-  width: 372.3px;
-  height: auto;
-  font-size: 54px;
-} */
 
 #shape-home3 {
   width: 20.6px;
@@ -461,19 +455,12 @@
   top: 202px;
   left: 153px;
 }
-/* 
-#shape-home3 {
-  width: 17.2px;
-  height: 21.7px;
-  position: absolute;
-  top: 169px;
-  left: 127.5px;
-} */
+
 
 #i {
   text-transform: lowercase;
   font-variant: small-caps;
-  font-family: "Fredoka";
+  font-family: "";
   color: rgba(15, 23, 42, 1);
   font-size: 64.8px;
   font-weight: 700px;
@@ -481,7 +468,7 @@
 
 #peacok-home {
   font-family: "Fredoka";
-  font-size: 81px;
+  font-size: 92px;
   margin: 0;
   color: rgba(30, 164, 139, 1);
   width: 458px;
@@ -583,7 +570,7 @@
     border-bottom-left-radius 2s ease-in-out,
     border-top-right-radius 2s ease-in-out,
     border-bottom-right-radius 2s ease-in-out, height 2s ease-in-out;
-}
+} */
 
 /*1اصغر حجم*/
 /* border-top-left-radius: 90px;

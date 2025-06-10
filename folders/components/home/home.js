@@ -153,21 +153,18 @@ setInterval(animateImages, 8000);
  */
 
 
-
+console.log("KKKKKKK");
 //home header
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("home-header").innerHTML = data;
-
-    //coloring social media header icons
+    document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
+    
+  });
+//coloring social media header icons
     coloringIconsGray2Black();
 
-    //open side bar
-    document.querySelector(".sidebar-btn").addEventListener("click", openSidebar);
-  });
-
-document.addEventListener("DOMContentLoaded", () => {
   function animateImages() {
     //1
     setTimeout(() => {
@@ -231,4 +228,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   animateImages();
   setInterval(animateImages, 16000);
-});
+
+
+  const requestHome = document
+      .querySelector("#home-container")
+      .querySelector("#request-btn-home");
+      requestHome.addEventListener("click", openRequestService);

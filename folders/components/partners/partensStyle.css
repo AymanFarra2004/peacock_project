@@ -12,9 +12,29 @@
   font-weight: 100;
   font-style: normal;
 }
+#partners-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  #partners-box {
+    padding: 0 100px; 
+  }
+}
+@media (max-width: 1439px) {
+  #partners-box {
+    padding: 0 75px; 
+  }
+}
 
 #partners {
-  height: 600px;/*700px*/
+  height: 600px; /*700px*/
+  width: 100%;
   max-width: 1440px;
   position: relative;
   overflow: hidden;
@@ -22,7 +42,7 @@
 #partners .container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #partners section {
@@ -94,7 +114,7 @@
 #partners-change-arrows {
   width: 56px;
   height: 128px;
-  position: absolute;  
+  position: absolute;
   right: -100px;
   top: 105px;
 }
@@ -105,6 +125,7 @@
 #partners-change-arrows div:nth-child(1) img {
   width: 21px;
   height: 12px;
+  cursor: pointer;
 }
 #partners-change-arrows div:nth-child(2) {
   width: 56px;
@@ -113,9 +134,8 @@
 #partners-change-arrows div:nth-child(2) img {
   width: 21px;
   height: 12px;
+  cursor: pointer;
 }
-
-
 
 #partners .container main {
   width: 410px;
@@ -157,7 +177,7 @@
   left: -43px;
 }
 
- #partners-decors {
+#partners-decors {
   width: 600px;
   height: 700px;
   position: absolute;
@@ -171,21 +191,24 @@
   position: absolute;
   top: 0;
   left: -627px;
-  height: 100%; 
-  object-fit: contain; 
-  
+  height: 100%;
+  object-fit: contain;
 
- -webkit-mask-image: linear-gradient(to right, 
-    rgba(0, 0, 0, 0) 0%, 
-    rgba(0, 0, 0, 0.5) 50%, 
-    rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
 
-  mask-image: linear-gradient(to right, 
-    rgba(0, 0, 0, 0) 40%, 
-    rgba(0, 0, 0, 0.4) 70%, 
-    rgba(0, 0, 0, 1) 100%);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }

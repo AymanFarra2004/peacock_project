@@ -20,17 +20,16 @@ function cateListanimation() {
   });
 }
 
-function openAllWorksPage() {
   document.getElementById("works-btn").addEventListener("click", function () {
-  window.location.href = "folders/components/all_works/allWorks.html";
-});
-}
+    window.location.href = "folders/components/all_works/allWorks.html";
+  });
 
 
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#cate-header").innerHTML = data;
+    coloringIconsGray2Black();
 
     const cateHeader = document.querySelector("#cate-header");
     cateHeader.querySelector(".logo-header").src =
@@ -40,6 +39,9 @@ fetch("folders/components/header/header.html")
     cateHeader.querySelector(".sidebar-btn").querySelector("img").src =
       "folders/images/sidebar-btn-white.svg";
 
+    document
+      .querySelector(".sidebar-btn")
+      .addEventListener("click", openSidebar);
     const icons = document
       .querySelector("#cate-header")
       .querySelectorAll(".icon");
@@ -72,7 +74,6 @@ fetch("folders/rotating_text/rotatingText.html")
       .querySelector("text")
       .setAttribute("fill", "rgba(255, 255, 255, 1)");
   });
-
 
 /* function infoBox() {
   const boxName = [

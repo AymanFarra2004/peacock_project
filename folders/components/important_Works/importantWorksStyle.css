@@ -20,36 +20,78 @@
   font-style: normal;
 }
 
-
-#imprtantWorks {
+#works-container {
+  width: 100%;
+  max-width: 1440px;
   height: auto;
   background: rgba(52, 52, 52, 1);
   overflow: hidden;
   position: relative;
-  max-width: 1440px;
+}
+#imprtantWorks {
+  margin: 0 100px;
+  /*   width: 100%; */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #cate-lines {
   position: absolute;
   left: 15px;
   top: 0px;
-  z-index: -5;
+  /*   z-index: -5; */
 }
 
 #cate-header {
   padding: 0.1px;
 }
-
+#cate-main {
+  position: relative;
+  width: 100%;
+  max-width: 1400px; /* عرض أقصى للمحتوى */
+  margin: 0 auto;     /* توسيط أفقي دائم */
+}
 #cate-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
-  margin: 48px 75px 48px 75px;
+  margin: 48px 0;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
+@media (min-width: 1400px) {
+  #cate-grid {
+    grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  }
+  #cate-grid > div {
+    max-width: 295px;
+    min-height: 394px;
+  }
+  #cate-grid > div img {
+    max-width: 295px;
+    min-height: 394px;
+  }
+}
+@media (max-width: 1300px) {
+  #cate-grid {
+    grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  }
+  #cate-grid > div {
+    max-width: 268px;
+    min-height: 360px;
+  }
+  #cate-grid > div img {
+    max-width: 268px;
+    min-height: 360px;
+  }
+}
+
 #cate-grid > div {
-  /* width: 259px;
-  height: 346px; */
-  width: 280px;
+  width: 100%;
   height: 360px;
   position: relative;
 }
@@ -57,8 +99,8 @@
 #cate-grid > div > img {
   object-fit: cover;
   border-radius: 40px;
-  width: 280px;
-  height: 360px;
+  width: 100%;
+  height: 100%;
 }
 #cate-grid > div:not(.container):not(#cate-title) > div:first-child {
   width: 240px;

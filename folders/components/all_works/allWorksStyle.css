@@ -163,6 +163,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   color: rgba(180, 180, 180, 1);
+  width: fit-content;
   cursor: pointer;
 }
 #all-works-nav ul li:nth-child(1) {

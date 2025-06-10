@@ -25,19 +25,53 @@
   font-weight: 500;
   font-style: normal;
 }
-
-/* #about-us {
+#aboutUs-box {
   background-color: rgba(254, 216, 95, 1);
-  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  overflow: hidden;
   position: relative;
-  padding-top: 1px;
+}
+@media (min-width: 1440px) {
+  #aboutUs-box {
+    padding: 0 100px; 
+  }
+}
+@media (max-width: 1439px) {
+  #aboutUs-box {
+    padding: 0 75px; 
+  }
 }
 
-#about-us h1 {
-  position: absolute;
+#aboutUs {
+  width: 100%;
+  max-width: 1440px;
+  height: 900px;
+  position: relative;
+
+}
+
+#aboutUs .container{
+  width: 100%;
+    max-width: 1440px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* @media (max-width: 1358px) {
+  #aboutUs {
+    margin: 75px;
+  }
+} */
+
+#aboutUs h1 {
   width: 452.7px;
-  top: 140px;
-  left: 240px;
+margin-top: 222px;
+margin-left: 72px;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 60px;
@@ -49,25 +83,23 @@
   position: absolute;
   width: 230px;
   height: 120px;
-  top: 285px;
-  left: 195px;
+  top: 205px;
+  left: 128px;
   border-width: 4px;
 }
 
 #aboutUs-shape1 {
   position: absolute;
-  width: 76.5px;
-  height: 95px;
-  top: 224.7px;
-  left: 423px;
+  width: 87px;
+  height: 105px;
+  top: 135px;
+  left: 352px;
 }
 
-#about-us h2 {
-  position: absolute;
+#aboutUs h2 {
   width: 450px;
-  height: 36px;
-  top: 381.6px;
-  left: 140px;
+  margin-top: 0px;
+  margin-left: 108px;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 34px;
@@ -75,28 +107,37 @@
   text-align: center;
   color: rgba(52, 52, 52, 1);
 }
-
-#about-rectangle {
+#aboutUs-arrow {
   position: absolute;
-  background-color: rgba(255, 234, 168, 0.27);
-  width: 783px;
-  height: 574px;
-  top: 146.7px;
-  left: 559px;
+  width: 314px;
+  height: 114px;
+  top: 346px;
+  left: 273px;
+  border-width: 3px;
+  z-index: 1;
 }
 
-#about-rectangle section {
+#aboutUs-rectangle {
+  background-color: rgba(255, 234, 168, 0.27);
+  width: 783px;
+  height: 727px;
+  margin-top: 47px;
+  margin-left: -50px;
+  position: relative;
+}
+
+#aboutUs-rectangle section {
   position: absolute;
   background-color: rgba(255, 234, 168, 0.27);
   width: 693px;
-  height: 484px;
+  height: 728px;
   top: 90px;
   left: 90px;
 }
 
-#about-rectangle section h3 {
+#aboutUs-rectangle section h3 {
   position: absolute;
-  top: 45px;
+  top: 80px;
   left: 20px;
   width: 535px;
   height: 230.4px;
@@ -106,8 +147,8 @@
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0%;
-}
-
+} 
+/*
 #aboutUs-arrow {
   position: absolute;
   width: 282.6px;
@@ -126,7 +167,7 @@ left: 450px;
 border-width: 1px;
 
 } */
-#about-container {
+/* #about-container {
   background-color: rgba(254, 216, 95, 1);
   position: relative;
   overflow: hidden;
@@ -136,13 +177,13 @@ border-width: 1px;
 #about-header {
   padding-top: 0.1px;
 }
-#about-us {
+#aboutUs {
   height: 900px;
   position: relative;
   padding-top: 1px;
 }
 
-#about-us h1 {
+#aboutUs h1 {
   position: absolute;
   width: 452.7px;
   top: 304.2px;
@@ -171,7 +212,7 @@ border-width: 1px;
   left: 423px;
 }
 
-#about-us h2 {
+#aboutUs h2 {
   position: absolute;
   width: 450px;
   height: 36px;
@@ -215,17 +256,9 @@ border-width: 1px;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0%;
-}
+} */
 
-#aboutUs-arrow {
-  position: absolute;
-  width: 282.6px;
-  height: 102.6px;
-  top: 415.8px;
-  left: 335.3px;
-  border-width: 3px;
-  z-index: 1;
-}
+
 
 #aboutUs-shape {
   position: absolute;
@@ -236,7 +269,7 @@ border-width: 1px;
   border-width: 1px;
 }
 
-#about-rectangle section div:nth-of-type(1) {
+#aboutUs-rectangle section div:nth-of-type(1) {
   position: absolute;
   top: 375px;
   height: 56px;
@@ -244,7 +277,7 @@ border-width: 1px;
   transition: top 1s ease-in-out;
 }
 
-#about-rectangle section:nth-of-type(1) div h4 {
+#aboutUs-rectangle section:nth-of-type(1) div h4 {
   position: absolute;
   left: 44px;
   top: 29px;
@@ -257,7 +290,7 @@ border-width: 1px;
   transition: color 1s ease-in-out;
 }
 
-#about-rectangle section:nth-of-type(1) div img {
+#aboutUs-rectangle section:nth-of-type(1) div img {
   position: absolute;
   left: 12px;
   top: 16px;
@@ -267,13 +300,13 @@ border-width: 1px;
   transition: opacity 1s ease-in-out;
 }
 
-#about-rectangle section div:nth-of-type(2) {
+#aboutUs-rectangle section div:nth-of-type(2) {
   position: absolute;
   top: 427px;
   height: 56px;
   width: 606px;
 }
-#about-rectangle section:nth-of-type(2) div h4 {
+#aboutUs-rectangle section:nth-of-type(2) div h4 {
   position: absolute;
   left: 44px;
   top: 29px;
@@ -284,7 +317,7 @@ border-width: 1px;
   line-height: 0%;
   letter-spacing: 0%;
 }
-#about-rectangle section:nth-of-type(2) div img {
+#aboutUs-rectangle section:nth-of-type(2) div img {
   position: absolute;
   left: 12px;
   top: 16px;
@@ -307,11 +340,12 @@ border-width: 1px;
 #animate-arrow-black {
   position: absolute;
   bottom: 35px;
-  right: 0;
+  left: -1310px;
   width: 2620px;
   height: 48px;
   background-size: 80px 48px;
   background-image: url("../../images/black-arrow.svg");
   background-repeat: repeat-x;
   transition: transform 1s ease-in-out;
+  z-index: 5;
 }
