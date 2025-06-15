@@ -17,6 +17,12 @@
   top: 0;
   right: 0;
 }
+@media (max-width: 768px) {
+#rotating-text {
+  font-size: 14px;
+  font-weight: 100;
+}
+}
 
 .rotating-circle- {
   animation: rotate 20s linear infinite;
