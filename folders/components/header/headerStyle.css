@@ -27,12 +27,24 @@
   width: 117px;
   height: 56px;
 }
+@media (max-width: 768px){
+.slogo-header {
+  width: 102px;
+  height: 48px;
+}
+}
 
 .social-media-header {
   display: flex;
   align-items: center;
   gap: 9px;
 }
+@media (max-width: 768px){
+.social-media-header {
+  display: none;
+}
+}
+
 
 .icons-header {
   height: 31px;

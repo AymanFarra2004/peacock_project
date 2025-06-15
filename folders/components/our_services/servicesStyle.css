@@ -33,6 +33,7 @@
   justify-content: center;
   padding: 0 100px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 @media (min-width: 1440px) {
   #services-box {
@@ -48,15 +49,18 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
+  
 }
 
 #rotating-text-top {
   position: absolute;
-  left: -160px;
-  bottom: -220px;
+  right: -350px;
+  top: -250px;
 }
 #rotating-text-bottom {
   position: absolute;
+  left: -160px;
+  bottom: -220px;
 }
 
 #header-services {
