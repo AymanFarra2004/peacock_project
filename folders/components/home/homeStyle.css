@@ -37,9 +37,10 @@
   }
 }
 #container-home {
-  height: 900px;
+  height: 100%;
   width: 100%;
   max-width: 1440px;
+  margin-bottom: 113px;
 }
 #home-header {
   width: 100%;
@@ -48,7 +49,8 @@
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
-
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #main-home {
   width: 498px;

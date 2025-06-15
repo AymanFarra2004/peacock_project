@@ -37,30 +37,37 @@
 }
 @media (min-width: 1440px) {
   #aboutUs-box {
-    padding: 0 100px; 
+    padding: 0 100px;
   }
 }
 @media (max-width: 1439px) {
   #aboutUs-box {
-    padding: 0 75px; 
+    padding: 0 70px;
   }
 }
 
 #aboutUs {
   width: 100%;
   max-width: 1440px;
-  height: 900px;
+  height: 100%;
   position: relative;
-
 }
 
-#aboutUs .container{
+#aboutUs .container {
   width: 100%;
-    max-width: 1440px;
+  max-width: 1440px;
   position: relative;
   display: flex;
   overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+/* @media (max-width: 1300px) {
+  #aboutUs .container {
+    width: 70%;
+    height: 70%;
+  }
+} */
 
 /* @media (max-width: 1358px) {
   #aboutUs {
@@ -69,22 +76,23 @@
 } */
 
 #aboutUs h1 {
-  width: 452.7px;
-margin-top: 222px;
-margin-left: 72px;
+  width: 440px;
+  margin-top: 222px;
+  margin-left: 20px;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 60px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  position: relative;
 }
 
 #about-vector {
   position: absolute;
   width: 230px;
   height: 120px;
-  top: 205px;
-  left: 128px;
+  top: -16px;
+  left: 48px;
   border-width: 4px;
 }
 
@@ -92,29 +100,35 @@ margin-left: 72px;
   position: absolute;
   width: 87px;
   height: 105px;
-  top: 135px;
-  left: 352px;
+  top: -87px;
+  left: 275px;
 }
 
 #aboutUs h2 {
-  width: 450px;
+  width: 440px;
   margin-top: 0px;
-  margin-left: 108px;
+  margin-left: 30px;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 34px;
   letter-spacing: 3px;
   text-align: center;
   color: rgba(52, 52, 52, 1);
+  position: relative;
 }
 #aboutUs-arrow {
   position: absolute;
   width: 314px;
   height: 114px;
-  top: 346px;
-  left: 273px;
+  top: 50px;
+  left: 163px;
   border-width: 3px;
   z-index: 1;
+}
+@media (max-width: 1300px) {
+    #aboutUs-arrow {
+    display: none;
+  }
 }
 
 #aboutUs-rectangle {
@@ -147,7 +161,7 @@ margin-left: 72px;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0%;
-} 
+}
 /*
 #aboutUs-arrow {
   position: absolute;
@@ -257,8 +271,6 @@ border-width: 1px;
   line-height: 32px;
   letter-spacing: 0%;
 } */
-
-
 
 #aboutUs-shape {
   position: absolute;

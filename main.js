@@ -1,4 +1,5 @@
 console.log(window.innerWidth);
+console.log(window.location.hash);
 
 //sideBar
 fetch("folders/components/side_bar/sideBar.html")
@@ -177,3 +178,6 @@ fetch("folders/components/contact/contact.html")
       document.head.appendChild(contactScirpt);
     }
   });
+
+
+

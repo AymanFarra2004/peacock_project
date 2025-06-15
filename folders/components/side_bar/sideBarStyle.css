@@ -320,6 +320,9 @@
 #list-sidebar {
   flex: 1;
   margin-top: 59.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #list-sidebar ul {
@@ -327,18 +330,25 @@
   margin: 0;
   padding: 0;
 }
-
-#list-sidebar ul li {
-  margin-top: 10px;
+#list-sidebar a {
+  text-decoration: none;
   color: rgba(180, 180, 180, 1);
   font-size: 24px;
   font-family: "Avenir Arabic Medium", sans-serif;
   font-weight: 800;
+}
+#list-sidebar ul li {
+  margin-top: 10px;
+  
   width: fit-content;
   cursor: pointer;
 }
 #list-sidebar li:hover {
   color: rgba(30, 164, 139, 1);
+}
+#list-sidebar li a.active {
+  color: rgba(30, 164, 139, 1);
+  font-weight: bold;
 }
 
 #request-btn-sidebar {
@@ -347,7 +357,6 @@
   height: 52.2px;
   border-style: hidden;
   border-radius: 10px;
-  margin-top: 11.2px;
   color: rgba(52, 52, 52, 1);
   font-size: 15px;
   font-weight: 700;

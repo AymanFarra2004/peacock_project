@@ -19,31 +19,44 @@
   font-weight: 500;
   font-style: normal;
 }
-
 #works-container {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   height: auto;
   background: rgba(52, 52, 52, 1);
   overflow: hidden;
   position: relative;
 }
-#imprtantWorks {
-  margin: 0 100px;
-  /*   width: 100%; */
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
+#cate-box {
+  width: 100%;
+    display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) {
+  #cate-box {
+    padding: 0 100px; 
+  }
+}
+@media (max-width: 1439px) {
+  #cate-box {
+    padding: 0 75px; 
+  }
+}
+#imprtantWorks {
+    width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  /* overflow: hidden; */
+  position: relative;
 }
 
 #cate-lines {
   position: absolute;
   left: 15px;
   top: 0px;
-  /*   z-index: -5; */
 }
 
 #cate-header {
@@ -52,8 +65,7 @@
 #cate-main {
   position: relative;
   width: 100%;
-  max-width: 1400px; /* عرض أقصى للمحتوى */
-  margin: 0 auto;     /* توسيط أفقي دائم */
+  max-width: 1400px;
 }
 #cate-grid {
   display: grid;
@@ -159,6 +171,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: relative;
 }
 
 #categories .content {
@@ -184,6 +197,7 @@
   padding: 0;
   width: 100%;
   height: 175px;
+  position: relative;
 }
 #categories ul li {
   font-family: "Avenir Arabic Medium", sans-serif;
@@ -201,15 +215,17 @@
   font-size: 22px;
 }
 #cate-arrow-list {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 119px;
-  left: 0px;
+  width: 25px;
+  height: 360px;
+ position: absolute;
+ left: 0;
 }
 #cate-arrow-list img {
   width: 25px;
-  height: 30px;
+  height: 20px !important;
+   position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 #cate-big-circuit {

@@ -48,9 +48,14 @@
 
 #blog-agency {
   position: relative;
-  overflow: hidden;
   width: 100%;
   max-width: 1440px;
+}
+#blog-rotate-text {
+  position: absolute;
+  bottom: -400px;
+  left: -250px;
+  z-index: -2;
 }
 
 #blog-agency .container {
@@ -361,12 +366,7 @@
   padding-top: 8px;
 }
 
-#blog-rotate-text {
-  position: absolute;
-  bottom: -400px;
-  left: -137px;
-  z-index: -2;
-}
+
 
 #blog-vector1-white1 {
   width: 94px;

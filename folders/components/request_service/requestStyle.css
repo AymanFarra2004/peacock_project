@@ -197,30 +197,126 @@
   line-height: 159%;
   text-align: center;
   align-self: flex-end;
+  cursor: pointer;
 }
 
-#request-image {
+#request-box section {
+  width: 472px;
+  overflow: hidden;
+}
+#request-images {
+  width: 2832px;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.motion-graphic {
   background-color: rgba(29, 88, 106, 1);
   width: 472px;
-  height: 591px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
 }
-#request-image img {
+.motion-graphic img {
   object-fit: cover;
   width: 800px;
   height: 850px;
   align-self: center;
   position: absolute;
-  bottom: -224px;
 }
-#request-image .infoBox-motion {
+
+.digitalMarketing-platformMangement {
+  width: 472px;
+  height: 100%;
+  background-color: #f5d478;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.digitalMarketing-platformMangement img {
+  object-fit: cover;
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  bottom: 0;
+}
+.webDevelopment {
+  width: 472px;
+  height: 100%;
+  background-color: rgba(191, 209, 171, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.webDevelopment img {
+  object-fit: cover;
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  bottom: 0;
+}
+
+.visualIdentity {
+  width: 472px;
+  height: 100%;
+  background-color: rgba(236, 134, 99, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.visualIdentity img {
+  object-fit: cover;
+  width: 75%;
+  height: 100;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.newsServices {
+  width: 472px;
+  height: 100%;
+  background-color: rgba(175, 211, 225, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.newsServices img {
+  object-fit: cover;
+  width: 110%;
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+
+.voicerServices {
+  width: 472px;
+  height: 100%;
+  background-color: rgba(235, 79, 116, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.voicerServices img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.request-img .infoBox {
   width: 414px;
   height: 222px;
-  padding-left: 19px;
-  padding-top: 19px;
+  padding: 19px 0 19px 19px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   align-self: center;
@@ -229,7 +325,7 @@
   z-index: 2;
 }
 
-#request-image .infoBox h2 {
+.request-img .infoBox h2 {
   width: 243px;
   height: 42px;
   margin: 0 0 8px 0;
@@ -239,7 +335,7 @@
   font-size: 19px;
   letter-spacing: 0%;
 }
-#request-image .infoBox p {
+.request-img .infoBox p {
   width: 395px;
   height: 96px;
   margin: 0 0 8px 0;
@@ -247,10 +343,11 @@
   font-family: "uniform rnd light";
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0%;
+  letter-spacing: 120%;
+  line-height: 150%;
 }
 
-#request-image .infoBox button {
+.request-img .infoBox button {
   width: 147px;
   height: 49px;
   margin-top: 19px;

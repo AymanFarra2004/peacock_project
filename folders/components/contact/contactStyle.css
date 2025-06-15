@@ -23,13 +23,33 @@
   font-weight: 500;
   font-style: normal;
 }
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  background: rgba(254, 216, 95, 1);
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  #contact-box {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1439px) {
+  #contact-box {
+    padding: 0 75px;
+  }
+}
 
 #contact {
   height: 900px;
+  width: 100%;
   max-width: 1440px;
-  background: rgba(254, 216, 95, 1);
   position: relative;
-  overflow: hidden;
+
   z-index: 1;
 }
 
@@ -40,7 +60,6 @@
 #contact .container {
   display: flex;
   justify-content: space-between;
-  margin: 0 75px 0 75px;
 }
 #contact .container h1 {
   width: 503px;
@@ -128,7 +147,7 @@
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   margin-top: 95px;
-  margin-left: 85px;
+  margin-left: 70px;
 }
 #message-header {
   width: 554px;
@@ -328,23 +347,30 @@
 }
 
 #contact-footer {
+  /*   margin-left: 75px;
+  margin-right: 75px; */
+  height: 70px;
+  width: 100%;
+  /* max-width: 1440px; */
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-footer > div {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 75px;
-  margin-right: 75px;
-  height: 70px;
-  max-width: 1440px;
-  background: rgba(255, 255, 255, 1);
 }
-
-#contact-footer > div:first-child {
+#contact-footer > div > div:first-child {
   width: 290px;
   height: 38px;
   display: flex;
   align-items: center;
 }
-#contact-footer > div:first-child p {
+#contact-footer > div > div:first-child p {
   font-family: "uniform rnd";
   font-weight: 400;
   font-size: 18px;
@@ -352,23 +378,21 @@
   letter-spacing: 0%;
   text-align: right;
 }
-#contact-footer > div:nth-child(2) {
+#contact-footer > div > div:nth-child(2) {
   width: 350px;
   height: 38px;
   display: flex;
   align-items: center;
   gap: 48px;
 }
-#contact-footer > div:nth-child(2) p {
-font-family: "Avenir Arabic Medium";
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0%;
+#contact-footer > div > div:nth-child(2) p {
+  font-family: "Avenir Arabic Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
-#contact-footer > div > div {
+#contact-footer > div > div > div {
   display: flex;
   gap: 5px;
 }
-
-

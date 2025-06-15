@@ -19,34 +19,48 @@
   font-weight: 500;
   font-style: normal;
 }
-
-#said-aboutUs {
-  height: 900px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(46.44deg, #ffffff 28.28%, #f8f8f8 95.36%);
+#said-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 100px;
   box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(46.44deg, #ffffff 28.28%, #f8f8f8 95.36%);
 }
 @media (min-width: 1440px) {
-  #said-aboutUs {
-    padding: 0 100px; 
+  #said-box  {
+    padding: 0 100px;
   }
 }
 @media (max-width: 1439px) {
-  #said-aboutUs {
-    padding: 0 75px; 
+  #said-box  {
+    padding: 0 75px;
   }
 }
+#said-rotate-text {
+  position: absolute;
+  right: -300px;
+  bottom: -350px;
+}
+#said-aboutUs {
+  height: 900px;
+  
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
 #said-aboutUs .container {
   display: flex;
   justify-content: space-between;
   /* padding-inline: 75px; */
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 
@@ -194,8 +208,4 @@
   cursor: pointer;
 }
 
-#said-rotate-text {
-  position: absolute;
-  right: -300px;
-  bottom: -350px;
-}
+
