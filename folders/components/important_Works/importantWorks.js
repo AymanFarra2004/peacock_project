@@ -1,3 +1,4 @@
+cateListanimation();
 function cateListanimation() {
   const cateList = document
     .querySelector("#categories")
@@ -10,20 +11,26 @@ function cateListanimation() {
       arrowList.style.top = arrowPositions[index];
 
       cateList.forEach(function (item) {
-        item.style.fontSize = "18px";
+        if (window.innerWidth > 768) {
+          item.style.fontSize = "18px";
+        } else {
+          item.style.fontSize = "16px";
+        }
         item.style.color = "rgb(150, 150, 150)";
       });
-
-      el.style.fontSize = "22px";
-      el.style.color = "white";
+      if (window.innerWidth > 768) {
+        el.style.fontSize = "22px";
+        el.style.color = "white";
+      } else {
+        el.style.color = "rgba(254, 216, 95, 1)";
+      }
     });
   });
 }
 
-  document.getElementById("works-btn").addEventListener("click", function () {
-    window.location.href = "folders/components/all_works/allWorks.html";
-  });
-
+document.getElementById("works-btn").addEventListener("click", function () {
+  window.location.href = "folders/components/all_works/allWorks.html";
+});
 
 fetch("folders/components/header/header.html")
   .then((res) => res.text())
@@ -58,8 +65,6 @@ fetch("folders/components/header/header.html")
       .querySelector("#cate-header")
       .querySelector(".sidebar-btn")
       .addEventListener("click", openSidebar);
-
-    cateListanimation();
   });
 
 fetch("folders/rotating_text/rotatingText.html")

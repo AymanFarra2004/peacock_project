@@ -75,6 +75,7 @@
 }
 @media (max-width: 768px) {
   #rotating-text-bottom {
+
     bottom: -390px;
     left: -320px;
   }
@@ -168,10 +169,9 @@
   height: 294px;
   background-color: rgba(175, 211, 225, 1);
   border-radius: 40px;
-
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .newsServices > .service-image {
   width: 100%;
@@ -195,7 +195,7 @@
   border-radius: 40px;
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   box-shadow: 0px 0px 24px 0px rgba(224, 19, 62, 1) inset;
 }
 .voicerServices > .service-image {
@@ -223,7 +223,7 @@
   /* overflow: hidden; */
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .voicerServices:hover .service-image img {
@@ -272,7 +272,7 @@
   border-radius: 40px;
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .webDevelopment > .service-image {
   width: 100%;
@@ -332,7 +332,7 @@
   border-radius: 40px;
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .visualIdentity > .service-image {
