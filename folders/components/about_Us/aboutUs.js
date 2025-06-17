@@ -11,6 +11,7 @@ fetch("folders/components/header/header.html")
     let logo = document
       .querySelector("#aboutUs-header")
       .querySelector(".logo-header");
+      console.log(logo)
     logo.src = "folders/images/peackok-logo-black.svg";
 
     let icons = document

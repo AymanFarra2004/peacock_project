@@ -156,13 +156,16 @@
   z-index: 2;
 }
 #peacok-vector-home {
-  width: 296px;
-  height: 21px;
+  width: 330px;
+  height: 27px;
   position: absolute;
-  top: 85px;
-  left: -35px;
+  top: 90px;
+  left: 0;
   border-style: hidden;
   border-width: 10px;
+}
+#peacok-vector-home img {
+  width: 100%;
 }
 @media (max-width: 768px) {
   #peacok-home h1 {
@@ -172,6 +175,7 @@
   #peacok-vector-home {
     width: 294px;
     height: 19px;
+    left: -15px;
   }
 }
 

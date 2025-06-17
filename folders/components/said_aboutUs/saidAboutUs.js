@@ -62,9 +62,12 @@ function updateSliderBtns() {
   let startX = 0;
   let endX = 0;
   let currentIndex = 0;
-
-  const cardWidth = 662 + 50;
-
+  let cardWidth = 0;
+  if(window.innerWidth > 768){
+  cardWidth = 662 + 50;
+}else {
+  cardWidth = 350 + 50;
+}
   const maxIndex = cards.length - 1;
 
   function showSlide(index) {

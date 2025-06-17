@@ -43,9 +43,15 @@
     padding: 0 75px;
   }
 }
+@media (max-width: 768px) {
+  #contact-box {
+    padding: 0 20px;
+  }
+}
 
 #contact {
-  height: 900px;
+  height: 100%;
+  min-height: 900px;
   width: 100%;
   max-width: 1440px;
   position: relative;
@@ -59,6 +65,7 @@
 
 #contact .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 #contact .container h1 {
@@ -75,6 +82,8 @@
 }
 #contact .container main {
   position: relative;
+  width: 100%;
+  max-width: 505px;
 }
 #contact .container main h2 {
   width: 432px;
@@ -98,37 +107,66 @@
   left: 30px;
   border-width: 5px;
 }
+@media (max-width: 768px) {
+#contact .container h1 {
+  width: 295px;
+  height: 53px;
+  font-size: 48px;
+  margin-left: 7px;
+}
+#contact .container main {
+  width: 100%;
+}
+#contact .container main h2 br {
+  display: none;
+}
+#contact .container main h2 {
+  width: 277px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 13px;
+  margin-left: 5px;
+}
+#contact-vector{
+  width: 291px;
+  height: 85px;
+  left: -30px;
+  top: 100px;
+}
+}
 
 #contact-map {
-  width: 505px;
+  width: 99%;
   height: 338px;
   margin-top: 32px;
   position: relative;
-}
-#contact-map img {
-  width: 505px;
-  height: 338px;
+  display: flex;
+  background-image: url("../../images/contact-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
+  justify-content: center;
 }
+
 #contact-map .map-address {
-  width: 433px;
+  width: 88%;
   height: 47px;
   padding: 12px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.65);
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
+  align-self: flex-end;
+  position: relative;
+  margin-bottom: 24px;
 }
 
-#contact-map .map-address img {
+#contact-map .map-address .contact-mapLocation {
   width: 17px;
   height: 20px;
   position: absolute;
   top: 14px;
   left: 16px;
 }
-#contact-map .map-address p {
+#contact-map .map-address > p {
   width: 401px;
   height: 47px;
   font-family: "Avenir Arabic Medium", sans-serif;
@@ -139,6 +177,70 @@
   color: rgba(52, 52, 52, 1);
   text-align: center;
 }
+.contact-phone, .contact-email {
+  display: none;
+}
+@media (max-width: 768px) {
+  #contact-map{
+    width: 99%;
+    height: 338px;
+    margin-top: 20px;
+    border-radius: 16px;
+  }
+#contact-map .map-address {
+  width: 88%;
+  height: 100px;
+  margin-bottom: 12px;
+}
+#contact-map .map-address .text {
+  font-size: 12px;
+  width: 278px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+#contact-map .map-address .contact-mapLocation {
+  top: 87px;
+}
+#contact-map .map-address .contact-phone {
+  display: block;
+  width: 145px;
+  height: 24px;
+  margin-top: 2px;
+}
+#contact-map .map-address .contact-phone img {
+  position: absolute;
+}
+#contact-map .map-address .contact-phone p {
+  margin-left: 27px;
+  width: 113px;
+  height: 24px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 500;
+font-size: 16px;
+color: rgba(52, 52, 52, 1);
+}
+#contact-map .map-address .contact-email {
+  display: block;
+  margin-top: 8px;
+}
+#contact-map .map-address .contact-email p {
+  margin-left: 27px;
+  width: 130px;
+  height: 24px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+font-size: 16px;
+color: rgba(52, 52, 52, 1);
+}
+#contact-map .map-address .contact-email img {
+  position: absolute;
+}
+}
+
+
 
 #contact .container section {
   width: 650px;
@@ -148,7 +250,21 @@
   border-radius: 12px;
   margin-top: 95px;
   margin-left: 70px;
+  margin-bottom: 100px;
 }
+@media (max-width: 1398px) {
+#contact .container section {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+}
+@media (max-width : 768px) {
+  #contact .container section {
+    width: 99%;
+    margin: 24px 0 100px 0;
+  }
+}
+
 #message-header {
   width: 554px;
   height: 33px;
@@ -184,7 +300,21 @@
   column-gap: 16px;
   row-gap: 24px;
 }
-
+@media (max-width: 637px) and (min-width: 500px) {
+#contact-boxes form {
+  grid-template-columns: 100px 72%;
+}
+}
+@media (max-width: 500px) and (min-width: 400px) {
+#contact-boxes form {
+  grid-template-columns: 100px 65%;
+}
+}
+@media (max-width: 400px) {
+#contact-boxes form {
+  grid-template-columns: 100px 178px;
+}
+}
 #contact-boxes form input::placeholder,
 #contact-boxes form textarea::placeholder {
   color: rgba(179, 179, 179, 1);
@@ -321,12 +451,19 @@
   right: -300px;
   z-index: -2;
 }
+@media (max-width: 768px) {
+  #contact-rotate-text {
+    display: none;
+  }
+}
+
 .contact-main-vector1 {
   width: 31px;
   height: 31px;
   position: absolute;
   bottom: 50px;
   right: 70px;
+  z-index: -1;
 }
 
 .contact-main-vector2 {
@@ -335,6 +472,7 @@
   position: absolute;
   bottom: 90px;
   right: 160px;
+  z-index: -1;
 }
 
 .contact-main-vector3 {
@@ -395,4 +533,14 @@
 #contact-footer > div > div > div {
   display: flex;
   gap: 5px;
+}
+@media (max-width: 768px) {
+  #contact-footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#contact-footer > div > div:nth-child(2) {
+  display: none;
+}
 }
