@@ -98,20 +98,28 @@ function closeRequestByOverlay() {
   requestOverLay.addEventListener("click", closeRequestService);
 }
 
-
 function openCloseSideBar() {
-    const btn = document.querySelector(".sidebar-btn");
-    btn.addEventListener("click", openSidebar);
-    
-    const overLay = document.querySelector("#overlay");
-    overLay.addEventListener("click", closeSidebar);
+  const btn = document.querySelector(".sidebar-btn");
+  btn.addEventListener("click", openSidebar);
+
+  const overLay = document.querySelector("#overlay");
+  overLay.addEventListener("click", closeSidebar);
 }
 
 function openSidebar() {
-  document.getElementById("sidebar-container").style.width = "650px";
-  document.getElementById("overlay").style.display = "block";
+  if (window.innerWidth > 768) {
+    document.getElementById("sidebar-container").style.width = "650px";
+    document.getElementById("overlay").style.display = "block";
+  } else {
+    document.getElementById("sidebar-container").style.width = "100%";
+    document.getElementById("overlay").style.display = "block";
+  }
+  document.body.style.overflow = "hidden";
+  document.querySelector("#sidebar-container").style.overflow = "auto";
 }
+
 function closeSidebar() {
   document.getElementById("sidebar-container").style.width = "0";
   document.getElementById("overlay").style.display = "none";
+  document.body.style.overflow = "auto";
 }

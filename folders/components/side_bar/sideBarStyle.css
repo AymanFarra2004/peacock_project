@@ -120,12 +120,6 @@
 }
  */
 
-
-
-
-
-
-
 /*  @font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
@@ -250,10 +244,7 @@
 }
  */
 
-
-
-
- @font-face {
+@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
@@ -261,7 +252,7 @@
   font-style: normal;
 }
 
-#sidebar-container{
+#sidebar-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -270,23 +261,34 @@
   background-color: white;
   z-index: 1000;
   display: flex;
+  overflow-y: auto;
   flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: hidden;
   transition: width 0.2s ease;
 }
+@media (max-width: 768px) {
+#sidebar-container {
+  max-height: 844px;
+}
+}
 
-#side-bar{
+#side-bar {
   margin-top: 43.5px;
   margin-left: 75px;
   margin-right: 75px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: center;
+  overflow-y: auto;
+  height: auto;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  #side-bar {
+    margin-left: 20px;
+    margin-right: 0;
+  }
 }
 
-#overlay{
+#overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -297,7 +299,6 @@
   z-index: 999;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   display: none;
 }
 
@@ -315,6 +316,7 @@
   width: 36px;
   height: 36px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 #list-sidebar {
@@ -339,7 +341,7 @@
 }
 #list-sidebar ul li {
   margin-top: 10px;
-  
+  font-size: 18px;
   width: fit-content;
   cursor: pointer;
 }
@@ -362,24 +364,10 @@
   font-weight: 700;
   cursor: pointer;
 }
-
-.icons-sidebar {
-  height: 23.3px;
-  width: 24px;
-}
-
-.arabic-sidebar {
-  font-size: 15px;
-  font-family: "Avenir Arabic Medium", sans-serif;
-  font-weight: 500;
-  line-height: 160%;
-  color: rgba(52, 52, 52, 1);
-}
-
-#social-media-sidebar {
-  display: flex;
-  align-items: center;
-  gap: 9px;
+@media (max-width: 768px) {
+  #request-btn-sidebar {
+    margin-top: 30px;
+  }
 }
 
 #footer-sidebar {
@@ -389,6 +377,47 @@
   width: 80%;
   position: absolute;
   bottom: 40px;
+}
+@media (max-width: 768px) {
+  #footer-sidebar {
+    flex-direction: column;
+  }
+}
+.icons-sidebar {
+  height: 23.3px;
+  width: 24px;
+}
+
+.arabic-sidebar a {
+  font-size: 15px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  line-height: 160%;
+  color: rgba(52, 52, 52, 1);
+}
+@media (max-width: 768px) {
+.arabic-sidebar {
+  margin-top: 20px;
+}
+.arabic-sidebar a {
+  color: rgba(180, 180, 180, 1);
+}
+.arabic-sidebar a:active {
+  color: rgba(52, 52, 52, 1);
+}
+}
+
+#social-media-sidebar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+@media (max-width: 768px) {
+  #footer-sidebar {
+    bottom: 0px;
+    top: 630px;
+  }
 }
 
 #social-media-sidebar a img {

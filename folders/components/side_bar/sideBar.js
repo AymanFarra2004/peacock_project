@@ -40,6 +40,11 @@ const sectionMap = {
       });
     }
   }
+  links.forEach(link => {
+  link.addEventListener('click', () => {
+    closeSidebar(); // أغلق السايد بار عند الضغط على أي رابط
+  });
+});
 
   window.addEventListener('scroll', onScroll);
   window.addEventListener('load', onScroll);

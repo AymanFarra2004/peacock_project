@@ -42,7 +42,7 @@
 }
 @media (max-width: 1439px) {
   #services-box {
-    padding: 0 50px;
+    padding: 0 75px;
   }
 }
 @media (max-width: 768px) {
@@ -60,6 +60,7 @@
   position: absolute;
   right: -350px;
   top: -250px;
+  z-index: -1;
 }
 @media (max-width: 768px) {
   #rotating-text-top {
@@ -138,7 +139,7 @@
 }
 @media (min-width: 768px) and (max-width: 1250px) {
   #services-flexBox1 > h1 {
-    width: 360px;
+    width: 340px;
   }
 }
 #services-vector1 {
@@ -297,6 +298,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .motionGraphic-videoProduction:hover {
   border-radius: 40px;
@@ -318,7 +320,7 @@
 }
 @media (min-width: 768px) and (max-width: 1250px) {
   .motionGraphic-videoProduction > .service-image img {
-    width: 360px;
+    width: 350px;
     height: 102%;
     right: 17px;
     top: 17px;
@@ -365,7 +367,7 @@
   .webDevelopment,
   .motionGraphic-videoProduction,
   .visualIdentity {
-    width: 360px;
+    width: 340px;
   }
 }
 .services-blur {
