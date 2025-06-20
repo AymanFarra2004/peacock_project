@@ -73,3 +73,4 @@ fetch("folders/rotating_text/rotatingText.html")
     }
   };
 
+

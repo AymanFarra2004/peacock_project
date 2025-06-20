@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  direction: rtl; 
+  text-align: right;
+}
+
+.outer-circle {
+  direction: ltr;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(237, 185, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(15px);
+}
+
+.inner-circle {
+  direction: ltr;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 166, 0, 0.2);
+  filter: blur(15px);
+}
+@media (max-width: 1280px) {
+  .inner-circle,
+  .outer-circle {
+    display: none;
+  }
+}
+
+#mouse {
+  direction: ltr;
+
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+}

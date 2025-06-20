@@ -165,7 +165,45 @@ fetch("folders/components/header/header.html")
 //coloring social media header icons
     coloringIconsGray2Black();
 
-  function animateImages() {
+    function animateImageMobile() {
+    //1
+    setTimeout(() => {
+      const whiteMobile = document.querySelector("#images .purble-mobileEdition");
+      const blackMobile = document.querySelector("#images .black-mobileEdition");
+
+      whiteMobile.style.height = "150px";
+      blackMobile.style.height = "310px";
+      whiteMobile.style.width = "139px";
+      blackMobile.style.width = "287px";
+
+      whiteMobile.style.top = "214px";
+      blackMobile.style.top = "7px";
+      whiteMobile.style.right = "98px";
+      blackMobile.style.right = "20px";
+      
+    }, 2000);
+
+    //2
+    setTimeout(() => {
+
+      const whiteMobile = document.querySelector("#images .purble-mobileEdition");
+      const blackMobile = document.querySelector("#images .black-mobileEdition");
+
+      whiteMobile.style.height = "309px";
+      blackMobile.style.height = "150px";
+      whiteMobile.style.width = "287px";
+      blackMobile.style.width = "139px";
+
+      whiteMobile.style.top = "7px";
+      blackMobile.style.top = "214px";
+      whiteMobile.style.right = "20px";
+      blackMobile.style.right = "89px";
+    }, 6000);
+  } 
+
+  
+
+  function animateImageDesktop() {
     //1
     setTimeout(() => {
       let white = document.querySelector(".white");
@@ -190,8 +228,8 @@ fetch("folders/components/header/header.html")
       purble.style.borderBottomLeftRadius = "0px";
 
       purble.style.left = "420px";
-      white.style.left = "0px";
-      black.style.left = "0px";
+      white.style.right = "210px";
+      black.style.right = "210px";
     }, 6000);
 
     //3
@@ -222,13 +260,18 @@ fetch("folders/components/header/header.html")
       purble.style.left = "0";
       white.style.top = "423px";
       black.style.top = "0px";
-      white.style.left = "212px";
-      black.style.left = "212px";
+      white.style.right = "0px";
+      black.style.right = "0px";
     }, 14000);
   }
-  animateImages();
-  setInterval(animateImages, 16000);
 
+  if (window.innerWidth > 768) {
+  animateImageDesktop();
+  setInterval(animateImageDesktop, 16000);
+}else {
+  animateImageMobile();
+  setInterval(animateImageMobile, 10000);
+}
 
   const requestHome = document
       .querySelector("#home-container")

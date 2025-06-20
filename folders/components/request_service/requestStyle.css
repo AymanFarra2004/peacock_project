@@ -44,6 +44,14 @@
   justify-self: center;
   z-index: 5;
 }
+/* @media (max-width: 768px) {
+#request-box {
+  top:0;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+} */
+
 #request-box .container {
   width: 100%;
   height: 100%;
@@ -52,6 +60,11 @@
   overflow: hidden;
   align-self: center;
   justify-self: center;
+}
+@media (max-width: 768px) {
+  #request-box {
+    border-radius: 12px;
+  }
 }
 
 #request-box .container main {
@@ -77,6 +90,18 @@
   column-gap: 24px;
   row-gap: 16px;
 }
+@media (max-width: 768px) {
+  #request-box .container main {
+    width: 90%;
+    margin: 16px;
+  }
+  #request-box .container main form {
+    width: 318px;
+    height: 588px;
+    grid-template-columns: 318px;
+    grid-template-rows: 56px 56px 56px 56px 118px 134px;
+  }
+}
 #request-box .container main form input::placeholder,
 #request-box .container main form textarea::placeholder {
   color: rgba(179, 179, 179, 1);
@@ -95,6 +120,14 @@
   background-color: rgba(245, 245, 245, 1);
   padding-left: 13px;
 }
+@media (max-width: 768px) {
+  #request-box .container main form input[name="full-name"],
+  #request-box .container main form select[name="options"],
+  #request-box .container main form textarea {
+    grid-column: 1;
+  }
+}
+
 #request-box .container main form textarea {
   padding-top: 13px;
 }
@@ -108,6 +141,12 @@
 #request-box .container main form div {
   grid-column: 1 / span 2;
 }
+@media (max-width: 768px) {
+  #request-box .container main form div {
+    grid-column: 1;
+  }
+}
+
 #request-box .container main form select[name="options"] option {
   color: white;
   background-color: rgba(15, 121, 99, 1);
@@ -204,6 +243,12 @@
   width: 472px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  #request-box section {
+    display: none;
+  }
+}
+
 #request-images {
   width: 2832px;
   height: 100%;

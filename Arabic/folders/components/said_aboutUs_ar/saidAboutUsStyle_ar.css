@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "uniform rnd";
+  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "uniform rnd light";
+  src: url("../../fonts/Uniform Rounded Condensed Light.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../../fonts/Manrope-VariableFont_wght.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+#said-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(46.44deg, #ffffff 28.28%, #f8f8f8 95.36%);
+}
+@media (min-width: 1440px) {
+  #said-box {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1439px) {
+  #said-box {
+    padding: 0 75px;
+  }
+}
+@media (max-width: 768px) {
+  #said-box {
+    padding: 0 20px;
+  }
+}
+#said-rotate-text {
+  position: absolute;
+  left: -300px;
+  bottom: -350px;
+}
+@media (max-width: 768px) {
+  #said-rotate-text {
+    display: none;
+  }
+}
+
+#said-aboutUs {
+  height: 100%;
+  min-height: 900px;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  #said-aboutUs {
+    max-height: 844px;
+    min-height: 0;
+  }
+}
+
+#said-aboutUs .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* padding-inline: 75px; */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#said-aboutUs .container main {
+  width: 400px;
+  margin-top: 178px;
+  position: relative;
+}
+@media (max-width: 1284px) {
+  #said-aboutUs .container main {
+    margin-top: 20px;
+  }
+}
+
+#said-aboutUs .container main h1 {
+  width: 400px;
+
+  font-family: "uniform rnd", sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+
+#said-aboutUs .container main p {
+  width: 362px;
+  height: 124px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+  padding-top: 13px;
+}
+@media (max-width: 768px) {
+  #said-aboutUs .container main {
+    margin-top: 24px;
+  }
+  #said-aboutUs .container main h1 {
+    width: 276px;
+    height: 106px;
+    font-size: 48px;
+  }
+  #said-aboutUs .container main p {
+    width: 350px;
+    height: 90px;
+    font-size: 14px;
+  }
+}
+
+#said-aboutUs .green-arrow {
+  width: 416px;
+  height: 220px;
+  position: absolute;
+  bottom: -200px;
+  right: 180px;
+  transform: rotateY(180deg);
+}
+#said-aboutUs .green-arrow img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(10deg);
+}
+
+@media (max-width: 1284px) {
+  #said-aboutUs .green-arrow {
+    transform: rotate(80deg);
+    width: 300px;
+    height: 120px;
+    bottom: -150px;
+    right: -300px;
+  }
+#said-aboutUs .green-arrow img {
+  transform: rotateX(180deg);
+  }
+}
+@media (max-width: 768px) {
+  #said-aboutUs .green-arrow {
+    width: 170px;
+    transform: rotate(100deg);
+    height: 95px;
+    bottom: -130px;
+    right: -50px;
+  }
+}
+
+#said-aboutUs section {
+  width: 712px;
+  height: 452px;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-right: 50px;
+  box-shadow: 20px 14px 40px 0px rgba(0, 0, 0, 0.08);
+  
+}
+@media (max-width: 1384px) {
+  #said-aboutUs section {
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #said-aboutUs section {
+     margin-bottom: 190px;
+  }
+}
+
+#said-slider-wrapper {
+  width: 2898px;
+  height: 300px;
+  margin: 50px 0 0 0;
+  display: flex;
+  position: relative;
+  cursor: grab;
+  
+}
+@media (max-width: 768px) {
+  #said-aboutUs section {
+    width: 350px;
+    height: 174px;
+  }
+  #said-slider-wrapper {
+    width: 1550px;
+    height: 154px;
+    margin: 0;
+  }
+}
+#said-slider-wrapper:active {
+  cursor: grabbing;
+}
+
+#said-slider-wrapper .said-slider-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#said-slider-wrapper .card {
+  margin-right: 50px;
+}
+#said-slider-wrapper .card {
+  width: 662px;
+  height: 300px;
+
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #said-slider-wrapper .card {
+    width: 350px;
+    height: 154px;
+    box-shadow: none;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-right: 0;
+  }
+}
+
+#said-slider-wrapper .card .said-card-img {
+  width: 236px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+#said-slider-wrapper .card .said-card-img img {
+  width: 236px;
+  height: 253px;
+  border-top-left-radius: 100px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  #said-slider-wrapper .card .said-card-img {
+    width: 101px;
+    height: 154px;
+  }
+  #said-slider-wrapper .card .said-card-img img {
+    width: 100px;
+    height: 125px;
+    border-top-left-radius: 50px;
+  }
+}
+
+#said-slider-wrapper .card > img {
+  width: 26px;
+  height: 24px;
+  position: absolute;
+  top: 38px;
+  right: 190px;
+}
+@media (max-width: 768px) {
+  #said-slider-wrapper .card > img {
+    right: 90px;
+    top: 10px;
+  }
+}
+
+#said-slider-wrapper .card .text {
+  width: 350px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+#said-slider-wrapper .card .text h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  color: rgba(52, 52, 52, 1);
+}
+#said-slider-wrapper .card .text p {
+  font-family: "uniform rnd light", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(180, 180, 180, 1);
+  margin-top: 12px;
+}
+#said-slider-wrapper .card .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(52, 52, 52, 1);
+  margin-top: 24px;
+}
+@media (max-width: 768px) {
+  #said-slider-wrapper .card .text {
+    width: 229px;
+    height: 130px;
+    padding: 0;
+    top: 7px;
+    left: -5px;
+  }
+  #said-slider-wrapper .card .text h2 {
+    font-size: 16px;
+    height: 27px;
+  }
+  #said-slider-wrapper .card .text p {
+    font-size: 12px;
+    margin-top: 8px;
+    height: 73px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+  #said-slider-wrapper .card .text h3 {
+    height: 18px;
+    font-size: 16px;
+    margin-top: 16px;
+    color: rgba(30, 164, 139, 1);
+  }
+}
+#said-aboutUs section .said-slide-btns-container {
+  width: 662px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  align-items: center;
+  margin-top: 35px;
+}
+@media (max-width: 768px) {
+  #said-aboutUs section .said-slide-btns-container {
+    margin: 6px -150px 0 0;
+  }
+}
+#said-slide-btns {
+  direction: ltr;
+}
+#said-slide-btns img {
+  width: 32px;
+  height: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+}

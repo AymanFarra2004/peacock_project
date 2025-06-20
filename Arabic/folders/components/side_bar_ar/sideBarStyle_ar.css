@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+#sidebar-container {
+  direction: rtl;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  transition: width 0.2s ease;
+}
+@media (max-width: 768px) {
+  #sidebar-container {
+    max-height: 844px;
+  }
+}
+
+#side-bar {
+  margin-top: 43.5px;
+  margin-right: 75px;
+  margin-left: 75px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: auto;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  #side-bar {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+#header-sidebar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-sidebar {
+  width: 91.5px;
+  height: 43.5px;
+}
+
+#back-arrow-sidebar {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#list-sidebar {
+  flex: 1;
+  margin-top: 59.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#list-sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#list-sidebar a {
+  text-decoration: none;
+  color: rgba(180, 180, 180, 1);
+  font-size: 24px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 800;
+}
+#list-sidebar ul li {
+  margin-top: 10px;
+  font-size: 18px;
+  width: fit-content;
+  cursor: pointer;
+}
+#list-sidebar li a:hover {
+  color: rgba(52, 52, 52, 1);
+}
+#list-sidebar li a.active {
+  color: rgba(30, 164, 139, 1);
+  font-weight: bold;
+}
+
+#request-btn-sidebar {
+  background-color: rgba(239, 189, 30, 1);
+  width: 160.5px;
+  height: 52.2px;
+  margin-top: 20px;
+  border-style: hidden;
+  border-radius: 10px;
+  color: rgba(52, 52, 52, 1);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #request-btn-sidebar {
+    margin-top: 30px;
+  }
+}
+
+#footer-sidebar {
+  display: flex;
+  justify-content: space-between;
+  height: 29px;
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+}
+
+#social-media-sidebar {
+  direction: ltr;
+}
+
+.icons-sidebar {
+  height: 23.3px;
+  width: 24px;
+}
+
+.arabic-sidebar a {
+  font-size: 25px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  line-height: 160%;
+  color: rgba(52, 52, 52, 1);
+  text-decoration: none;
+}
+.arabic-sidebar a:hover {
+  color: rgba(239, 189, 30, 1);
+}
+.arabic-sidebar a:active {
+  color: rgba(30, 164, 139, 1);
+}
+@media (max-width: 768px) {
+  .arabic-sidebar {
+    margin-top: 60px;
+    justify-self: flex-start;
+  }
+  .arabic-sidebar a {
+    color: rgba(180, 180, 180, 1);
+  }
+  .arabic-sidebar a:active {
+    color: rgba(52, 52, 52, 1);
+  }
+}
+
+#social-media-sidebar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+@media (max-width: 768px) {
+  #footer-sidebar {
+    bottom: 0px;
+    top: 630px;
+  }
+}
+
+#social-media-sidebar a img {
+  cursor: pointer;
+}

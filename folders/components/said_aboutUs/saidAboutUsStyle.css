@@ -171,6 +171,7 @@
   overflow: hidden;
   margin-top: 150px;
   margin-left: 50px;
+  box-shadow: 20px 14px 40px 0px rgba(0, 0, 0, 0.08);
 }
 @media (max-width: 1390px) {
   #said-aboutUs section {
@@ -225,7 +226,6 @@
 #said-slider-wrapper .card {
   width: 662px;
   height: 300px;
-  box-shadow: 20px 14px 40px 0px rgba(0, 0, 0, 0.08);
   position: relative;
 
   border-radius: 32px;

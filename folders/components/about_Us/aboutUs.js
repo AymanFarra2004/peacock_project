@@ -7,6 +7,7 @@ fetch("folders/components/header/header.html")
       .querySelector(".sidebar-btn")
       .addEventListener("click", openSidebar);
 
+
     //turn logo to black
     let logo = document
       .querySelector("#aboutUs-header")

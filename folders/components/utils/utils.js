@@ -83,19 +83,29 @@ function coloringIconsWhite2Black() {
 }
 
 function openRequestService() {
+  if(window.innerWidth > 768){ 
   document.getElementById("request-box").style.width = "967px";
   document.getElementById("request-box").style.height = "587px";
   document.getElementById("request-overLay").style.display = "block";
+}else {
+document.getElementById("request-box").style.width = "350px";
+  document.getElementById("request-box").style.height = "751px";
+  document.getElementById("request-overLay").style.display = "block";
+}
+document.body.style.overflow = "hidden";
+  document.querySelector("#requestService-container").style.overflow = "auto";
 }
 function closeRequestService() {
   document.getElementById("request-box").style.width = "0";
   document.getElementById("request-box").style.height = "0";
   document.getElementById("request-overLay").style.display = "none";
+  document.body.style.overflow = "auto";
 }
 
 function closeRequestByOverlay() {
   const requestOverLay = document.querySelector("#request-overLay");
   requestOverLay.addEventListener("click", closeRequestService);
+  document.body.style.overflow = "auto";
 }
 
 function openCloseSideBar() {

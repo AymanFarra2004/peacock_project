@@ -400,6 +400,7 @@ color: rgba(52, 52, 52, 1);
 .options {
   position: absolute;
   height: 250px;
+  width: 107px;
   top: 100%;
   left: 0;
   right: 0;
@@ -410,6 +411,7 @@ color: rgba(52, 52, 52, 1);
   border-radius: 8px;
   max-height: 150px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .option:hover {

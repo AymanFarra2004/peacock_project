@@ -4,7 +4,7 @@ function cateListanimation() {
     .querySelector("#categories")
     .querySelectorAll("ul li");
   const arrowList = document.querySelector("#cate-arrow-list");
-  const arrowPositions = ["119px", "171px", "223px", "276px"];
+  const arrowPositions = ["3px", "54px", "105px", "156px"];
 
   cateList.forEach(function (el, index) {
     el.addEventListener("click", function () {

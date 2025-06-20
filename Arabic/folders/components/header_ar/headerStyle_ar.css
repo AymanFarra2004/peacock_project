@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf") format("opentype");
+  font-weight: 500; 
+  font-style: normal;
+}
+/* #header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+} */
+ #header-container {
+  width: 100%;
+ }
+
+.header-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  height: 58px;
+  margin: 58px auto 0 auto; 
+}
+.logo-header {
+  width: 117px;
+  height: 56px;
+}
+@media (max-width: 768px){
+.slogo-header {
+  width: 102px;
+  height: 48px;
+}
+}
+
+.social-media-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  direction: ltr;
+}
+@media (max-width: 768px){
+.social-media-header {
+  display: none;
+}
+}
+
+
+.icons-header {
+  height: 31px;
+  width: 31px;
+  cursor: pointer;
+}
+
+
+.nav-bar-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arabic-header{
+    font-size: 25px;
+    font-family: "Avenir Arabic Medium", sans-serif;
+    font-weight: 500;
+    line-height: 160%;
+    color: rgba(52, 52, 52, 1);
+    text-decoration: none;
+}
+.arabic-header:hover {
+  color: rgba(239, 189, 30, 1);
+}
+.arabic-header:active {
+  color: rgba(30, 164, 139, 1);
+}
+
+.sidebar-btn {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.sidebar-btn img{
+    width: 40px;
+    height: 30px;
+}

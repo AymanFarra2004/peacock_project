@@ -169,7 +169,6 @@ fetch("folders/components/contact/contact.html")
   .then((data) => {
     document.getElementById("contact-us-container").innerHTML = data;
 
-    
     const contactjsId = "contactScript-js";
     if (!document.getElementById(contactjsId)) {
       const contactScirpt = document.createElement("script");

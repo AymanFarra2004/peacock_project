@@ -1,0 +1,518 @@
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "uniform rnd";
+  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+#blogDetails-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+.outer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(237, 185, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(15px);
+}
+
+.inner-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 166, 0, 0.2);
+  filter: blur(15px);
+}
+
+#mouse {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+#blogDetails .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ /*  width: 65%; */
+  max-width: 942px;
+  /* margin: 0 auto; */
+  
+}
+
+#blogDetails-mobility {
+  height: 21px;
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+  align-items: center;
+}
+#blogDetails-mobility p {
+  height: 21px;
+  width: 79px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0%;
+  color: rgba(30, 164, 139, 1);
+}
+#blogDetails-mobility a:nth-of-type(1) {
+  width: 39px;
+}
+#blogDetails-mobility a:nth-of-type(2) {
+  width: 56px;
+}
+#blogDetails-mobility a {
+  height: 21px;
+  text-decoration: none;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0%;
+  color: rgba(180, 180, 180, 1);
+}
+#blogDetails-mobility a:hover {
+  color: rgba(254, 216, 95, 1);
+}
+
+#blogDetails main {
+  max-width: 942px;
+  margin-top: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#blogDetails main h1 {
+  height: 30px;
+  font-family: "uniform rnd", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(52, 52, 52, 1);
+}
+
+#blogDetails main > div:nth-of-type(1) {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 24px;
+  width: 226px;
+  height: 24px;
+  gap: 24px;
+}
+#blogDetails main > div:nth-of-type(1) div p {
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: rgba(180, 180, 180, 1);
+}
+#blogDetails main div:nth-of-type(1) .views-info {
+  width: 87px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+#blogDetails main div:nth-of-type(1) .comments-info {
+  width: 120px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.blogDetails-image {
+  height: 447px;
+  max-width: 931px;
+  margin-top: 24px;
+}
+.blogDetails-image img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.blogDetails-text1 {
+  height: 166px;
+  width: 803px;
+  margin-top: 32px;
+  align-self: flex-start;
+  margin-left: 11px;
+}
+.blogDetails-text1 h2 {
+  width: 100%;
+  height: 30px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+.blogDetails-text1 p {
+  width: 654px;
+  height: 120px;
+  margin-top: 16px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+
+.blogDetails-text2 {
+  height: 166px;
+  width: 803px;
+  margin-top: 32px;
+  align-self: flex-start;
+  margin-left: 11px;
+}
+
+.blogDetails-text2 > div {
+  display: flex;
+}
+
+.blogDetails-text2 h2 {
+  width: 100%;
+  height: 30px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+.blogDetails-text2 p {
+  width: 654px;
+  height: 120px;
+  margin-top: 16px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+
+.blogDetails-divider {
+  width: 931px;
+  max-width: 931px;
+  margin: 32px 0;
+}
+
+#blogDetails-middle-text {
+  width: 854px;
+  height: 173px;
+  border-radius: 12px;
+  background: rgba(250, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+#blogDetails-middle-text h2 {
+  width: 589px;
+  height: 30px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-top: 32px;
+}
+
+#blogDetails-middle-text p {
+  width: 752px;
+  height: 60px;
+  margin-top: 16px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+#blogDetails-middle-box {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  align-self: flex-start;
+}
+#blogDetails-middle-box img {
+  width: 373px;
+  height: 332px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#blogDetails-middle-box p {
+  width: 495px;
+  height: 111px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+#blogDetails-middle-box p:nth-of-type(1) {
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+#blogDetails-middle-box p:nth-of-type(2) {
+  margin-bottom: 24px;
+}
+#blogDetails-middle-box p:nth-of-type(3) {
+  color: rgba(66, 84, 102, 1);
+}
+
+.blogDetails-textUnder-middleBox {
+  width: 931px;
+  height: 60px;
+  font-family: "Avenir Arabic Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(52, 52, 52, 1);
+}
+
+
+#blogDetails #comments {
+  width: 100%;
+  margin-left: 11px;
+  margin-top: 48px;
+}
+#blogDetails #comments .comments-no {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+}
+#blogDetails #comments .comments-no > div {
+  width: 4px;
+  height: 28px;
+  background-color: rgba(30, 164, 139, 1);
+}
+#blogDetails #comments .comments-no h3 {
+  width: 104px;
+height: 22px;
+font-family: "Avenir Arabic Medium";
+font-weight: 800;
+font-size: 19px;
+line-height: 22px;
+color: rgba(52, 52, 52, 1);
+margin-left: 7px;
+}
+#blogDetails #comments .user-image {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#blogDetails #comments .user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comments-content > div {
+  display: flex;
+}
+.comment-content > div {
+  display: flex;
+}
+.comment-content {
+  width: 693px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.comment-content h3 {
+  width: 99px;
+  height: 22px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 800;
+font-size: 19px;
+line-height: 22px;
+color: rgba(52, 52, 52, 1);
+}
+.comment-content h4 {
+  width: 89px;
+  height: 19px;
+  font-family: "Avenir Arabic Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0%;
+  color: rgba(180, 180, 180, 1);
+  
+}
+.comment-content p {
+  width: 100%;
+  height: 60px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+color: rgba(52, 52, 52, 1);
+}
+#blogDetails #comments hr {
+  margin-bottom: 54px;
+  color: rgba(112, 112, 112, 1);
+}
+
+
+#blogDetails #add-comment .post-comment {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 32px;
+}
+#blogDetails #add-comment .post-comment > div {
+  width: 4px;
+  height: 28px;
+  background-color: rgba(30, 164, 139, 1);
+  margin-right: 7px;
+}
+#blogDetails #add-comment .post-comment > h3 {
+  width: 132px;
+  height: 22px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 800;
+font-size: 19px;
+line-height: 22px;
+letter-spacing: 0%;
+color: rgba(52, 52, 52, 1);
+}
+
+#blogDetails #post {
+  width: 100%;
+}
+#blogDetails #post form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 457px 457px;
+  grid-template-rows: 56px 134px;
+  column-gap: 16px;
+  row-gap: 49px;
+  margin-bottom: 21px;
+}
+#blogDetails #post form input::placeholder,
+#blogDetails #post form textarea::placeholder {
+  color: rgba(179, 179, 179, 1);
+  font-family: "Avenir Arabic Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+#blogDetails #post form input,
+#blogDetails #post form textarea {
+    border-radius: 12px;
+  border: none;
+  background: rgba(245, 245, 245, 1);
+  font-family: "Avenir Arabic Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 16px;
+}
+#blogDetails #post form input:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+#add-comment label{
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+#add-comment label input {
+  width: 20px;
+  height: 22px;
+  cursor: pointer;
+}
+#add-comment label span {
+  width: 100%;
+  height: 35px;
+  font-family: "Avenir Arabic Medium";
+font-weight: 400;
+font-size: 18px;
+line-height: 36px;
+color: rgba(158, 158, 158, 1);
+margin-left: 4px;
+}
+
+#add-comment button {
+  width: 189px;
+  height: 52px;
+  margin-top: 54px;
+  margin-bottom: 320px;
+  border: none;
+  border-radius: 8px;
+    background: linear-gradient(
+    to left,
+    rgba(254, 216, 95, 1) 50%,
+    rgba(30, 164, 139, 1) 50%
+  );
+  background-size: 200% 100%;
+  background-position: left;
+  font-family: "Avenir Arabic Medium";
+font-weight: 800;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-justify: center;
+text-align: center;
+vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+transition: background-position 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+#add-comment button:hover {
+  background-position: right;
+  color: rgba(52, 52, 52, 1);
+}
+
+#blogDetails-footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(254, 216, 95, 1);
+  color: rgba(52, 52, 52, 1);
+  font-family: "uniform rnd";
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}

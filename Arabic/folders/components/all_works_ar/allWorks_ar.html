@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="allWorksStyle.css" />
+    <link rel="stylesheet" href="../header/headerStyle.css" />
+    <link rel="stylesheet" href="../side_bar/sideBarStyle.css" />
+  </head>
+  <body>
+
+<!--       mouse crusor       -->
+       <div id="mouse">
+      <div class="outer-circle">
+        <div class="inner-circle"></div>
+      </div>
+    </div>
+
+    <!--         side bar                -->
+    <div id="sidebar-container">
+      <div id="side-bar">
+        <header id="header-sidebar">
+          <img
+            id="logo-sidebar"
+            src="../../images/logo-peacock.svg"
+            alt="Peackok logo"
+          />
+
+          <a onclick="closeSidebar()"
+            ><img
+              id="back-arrow-sidebar"
+              src="../../images/arrow-back.svg"
+              alt="back arrow"
+          /></a>
+        </header>
+        <div id="list-sidebar">
+          <ul>
+            <li><a href="#home"></a>Home</li>
+            <li><a href="#aboutUs"></a>About Us</li>
+            <li><a href="#services"></a>Services</li>
+            <li><a href="#workUs"></a>Work Us</li>
+            <li><a href="#blogs"></a>Blogs</li>
+            <li><a href="#partners"></a>Success Partners</li>
+            <li><a href="#contactUs"></a>Contact Us</li>
+          </ul>
+
+          <input
+            id="request-btn-sidebar"
+            type="button"
+            value="Request Service"
+          />
+        </div>
+
+        <footer id="footer-sidebar">
+          <div id="social-media-sidebar">
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/whatsapp-icon-gray.svg"
+                black="../../images/whatsapp-icon-black.svg"
+                gray="../../images/whatsapp-icon-gray.svg"
+                alt="whatsapp icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/x-icon-gray.svg"
+                black="../../images/x-icon-black.svg"
+                gray="../../images/x-icon-gray.svg"
+                alt="x icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/telegram-icon-gray.svg"
+                black="../../images/telegram-icon-black.svg"
+                gray="../../images/telegram-icon-gray.svg"
+                alt="telegram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/instgram-icon-gray.svg"
+                black="../../images/instgram-icon-black.svg"
+                gray="../../images/instgram-icon-gray.svg"
+                alt="instagram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/behance-icon-gray.svg"
+                black="../../images/behance-icon-black.svg"
+                gray="../../images/behance-icon-gray.svg"
+                alt="be icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/linkedin-icon-gray.svg"
+                black="../../images/linkedin-icon-black.svg"
+                gray="../../images/linkedin-icon-gray.svg"
+                alt="linkedin icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/facebook-icon-gray.svg"
+                black="../../images/facebook-icon-black.svg"
+                gray="../../images/facebook-icon-gray.svg"
+                alt="facebook icon"
+            /></a>
+          </div>
+          <div>
+            <a class="arabic-sidebar">العربية</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+
+<!--          over lay of side bar          -->
+<div id="overlay">
+
+</div>
+
+<!--              all works page                -->
+    <div id="all-works">
+
+      <!--           all works header           -->
+      <div id="all-works-header">
+        <header Class="header-header">
+          <img
+            class="logo-header"
+            src="../../images/logo-peacock.svg"
+            alt="Peackok logo"
+          />
+
+          <div class="social-media-header">
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/whatsapp-icon-gray.svg"
+                black="../../images/whatsapp-icon-black.svg"
+                gray="../../images/whatsapp-icon-gray.svg"
+                white="../../images/whatsapp-white.svg"
+                alt="whatsapp icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/x-icon-gray.svg"
+                black="../../images/x-icon-black.svg"
+                gray="../../images/x-icon-gray.svg"
+                white="../../images/x-white.svg"
+                alt="x icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/telegram-icon-gray.svg"
+                black="../../images/telegram-icon-black.svg"
+                gray="../../images/telegram-icon-gray.svg"
+                white="../../images/telegram-white.svg"
+                alt="telegram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/instgram-icon-gray.svg"
+                black="../../images/instgram-icon-black.svg"
+                gray="../../images/instgram-icon-gray.svg"
+                white="../../images/instgram-white.svg"
+                alt="instagram icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/behance-icon-gray.svg"
+                black="../../images/behance-icon-black.svg"
+                gray="../../images/behance-icon-gray.svg"
+                white="../../images/be-white.svg"
+                alt="be icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/linkedin-icon-gray.svg"
+                black="../../images/linkedin-icon-black.svg"
+                gray="../../images/linkedin-icon-gray.svg"
+                white="../../images/linkedin-white.svg"
+                alt="linkedin icon"
+            /></a>
+            <a
+              ><img
+                class="icons-header icon"
+                src="../../images/facebook-icon-gray.svg"
+                black="../../images/facebook-icon-black.svg"
+                gray="../../images/facebook-icon-gray.svg"
+                white="../../images/facebook-white.svg"
+                alt="facebook icon"
+            /></a>
+          </div>
+
+          <nav class="nav-bar-header">
+            <a class="arabic-header">العربية</a>
+
+            <div class="sidebar-btn">
+              <img src="../../images/sidebar-btn-black.svg" alt="frame icon" />
+            </div>
+          </nav>
+        </header>
+      </div>
+
+
+      <!--             all works content            -->
+      <div class="container">
+        <div id="all-works-mobility">
+          <a href="../../../index.html#home-container">Home</a>
+          <div><img src="../../images/mobility-arrow.svg" /></div>
+          <p>All Work</p>
+        </div>
+
+        <main>
+          <h1>All Work</h1>
+          <p>
+            We provide you with services of the highest quality and a variety of
+            technological services and products that meet customer needs and
+            contribute to improving operations and increasing efficiency. In
+            various sectors, including software and devices
+          </p>
+        </main>
+
+        <nav id="all-works-nav">
+          <ul>
+            <li data-filter="all">See All</li>
+            <li data-filter="motion-graphics">Motion Graphics</li>
+            <li data-filter="video-editing">Video Editing</li>
+            <li data-filter="ui-ux">UX/UI</li>
+            <li data-filter="android">Android</li>
+            <li data-filter="ios">iOS</li>
+            <li data-filter="web">Web</li>
+          </ul>
+        </nav>
+
+        <section>
+          <div class="ui-ux web">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/orange.png" class="all-works-image" />
+          </div>
+
+          <div class="motion-graphics video-editing">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/light-blue.jpg" class="all-works-image" />
+          </div>
+
+          <div class="motion-graphics video-editing">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img
+              src="../../images/all-works-graphic-design.jpg"
+              class="all-works-image"
+            />
+          </div>
+
+          <div class="motion-graphics">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/world-planet.jpg" class="all-works-image" />
+          </div>
+
+          <div class="ui-ux android web">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/news.jpg" class="all-works-image" />
+          </div>
+
+          <div class="ios">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/mobile.jpg" class="all-works-image" />
+          </div>
+
+          <div class="android web">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/laptop.jpg" class="all-works-image" />
+          </div>
+
+          <div class="ui-ux web">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img src="../../images/orange.png" class="all-works-image" />
+          </div>
+
+          <div class="motion-graphics video-editing">
+            <div class="all-works-card-info">
+              <p>Visual Identity project</p>
+              <img
+                src="../../images/be-white.svg"
+                white="../../images/be-white.svg"
+                black="behance-icon-black.svg"
+              /><img src="../../images/earth-url.svg" />
+            </div>
+            <img
+              src="../../images/all-works-baby-toy.jpg"
+              class="all-works-image"
+            />
+          </div>
+        </section>
+
+        <div id="all-works-load-more">
+          <p>Load More</p>
+          <img src="../../images/all-works-down-arrow.svg" />
+        </div>
+      </div>
+    </div>
+    <footer id="all-works-footer">
+      <p>Copyright © Peacock Company.</p>
+    </footer>
+
+    <script src="../header/header.js"></script>
+    <script src="../utils/utils.js"></script>
+    <script src="../side_bar/sideBar.js"></script>
+    <script src="allWorks.js"></script>
+  </body>
+</html>

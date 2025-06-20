@@ -132,11 +132,19 @@
 }
 
 #shape-home3 {
-  width: 29px;
-  height: 29px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: -10px;
-  left: -15px;
+  left: -23px;
+}
+@media (max-width: 768px) {
+  #shape-home3 {
+    width: 29px;
+    height: 29px;
+    top: -10px;
+    left: -15px;
+  }
 }
 
 #peacok-home {
@@ -288,20 +296,26 @@
     margin: 0;
   }
   #images .purble-mobileEdition {
+    opacity: 80%;
     display: block;
     width: 287px;
     height: 309px;
     position: absolute;
     top: 7px;
     right: 20px;
+    transition: top 2s ease-in-out, right 2s ease-in-out, height 2s ease-in-out,
+      width 2s ease-in-out;
   }
   #images .black-mobileEdition {
+    opacity: 80%;
     display: block;
     width: 139px;
     height: 150px;
     position: absolute;
     top: 214px;
     right: 98px;
+    transition: top 2s ease-in-out, right 2s ease-in-out, height 2s ease-in-out,
+      width 2s ease-in-out;
   }
 }
 
