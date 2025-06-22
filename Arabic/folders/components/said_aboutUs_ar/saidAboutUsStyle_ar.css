@@ -1,27 +1,19 @@
 @font-face {
-  font-family: "uniform rnd";
-  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "uniform rnd light";
-  src: url("../../fonts/Uniform Rounded Condensed Light.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Manrope";
-  src: url("../../fonts/Manrope-VariableFont_wght.ttf") format("opentype");
+  font-family: "Almarai Regular";
+  src: url("../../fonts/Almarai-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -101,7 +93,7 @@
 #said-aboutUs .container main h1 {
   width: 400px;
 
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 800;
   font-size: 72px;
   line-height: 110%;
@@ -300,14 +292,14 @@
   padding-left: 24px;
 }
 #said-slider-wrapper .card .text h2 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 48px;
   color: rgba(52, 52, 52, 1);
 }
 #said-slider-wrapper .card .text p {
-  font-family: "uniform rnd light", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 13px;
   line-height: 24px;
@@ -316,7 +308,7 @@
   margin-top: 12px;
 }
 #said-slider-wrapper .card .text h3 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: rgba(52, 52, 52, 1);

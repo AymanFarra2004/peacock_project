@@ -67,7 +67,7 @@ fetch("folders/components/header_ar/header_ar.html")
       .addEventListener("click", openSidebar);
   });
 
-fetch("folders/rotating_text/rotatingText.html")
+fetch("folders/rotating_text_ar/rotatingText_ar.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#cate-rotating-text-top").innerHTML = data;

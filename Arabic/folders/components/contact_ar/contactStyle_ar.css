@@ -1,10 +1,4 @@
 @font-face {
-  font-family: "uniform rnd";
-  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
@@ -12,17 +6,18 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Nunito";
-  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
+  font-family: "Almarai Regular";
+  src: url("../../fonts/Almarai-Regular.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "uniform rnd light";
-  src: url("../../fonts/Uniform Rounded Condensed Light.otf") format("opentype");
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
+
 #contact-box {
   display: flex;
   flex-direction: column;
@@ -68,11 +63,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#contact .container h1 {
-  width: 503px;
+#contact .container main h1 {
   height: 79px;
-  margin-top: 118px;
-  font-family: "uniform rnd", sans-serif;
+  margin-top: 60px;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 110%;
@@ -84,13 +78,15 @@
   position: relative;
   width: 100%;
   max-width: 505px;
+  display: flex;
+  flex-direction: column;
 }
 #contact .container main h2 {
   width: 432px;
   height: 80px;
   margin-top: 35px;
   margin-right: 45px;
-  font-family: "uniform rnd light", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 36px;
   line-height: 110%;
@@ -108,14 +104,16 @@
   border-width: 5px;
 }
 @media (max-width: 768px) {
-  #contact .container h1 {
+  #contact .container main h1 {
     width: 295px;
     height: 53px;
     font-size: 48px;
-    margin-right: 7px;
+    text-align: center;
+    align-self: center;
   }
   #contact .container main {
     width: 100%;
+    max-width: none;
   }
   #contact .container main h2 br {
     display: none;
@@ -125,13 +123,13 @@
     height: 30px;
     font-size: 16px;
     margin-top: 13px;
-    margin-right: 5px;
+    text-align: center;
   }
   #contact-vector {
-    width: 120px;
+    width: 150px;
     height: 70px;
-    right: 60px;
-    top: 110px;
+    right: 75px;
+    top: 53px;
     z-index: -1;
   }
 }
@@ -170,6 +168,7 @@
 #contact-map .map-address > p {
   width: 401px;
   height: 47px;
+  margin-right: 20px;
   font-family: "Avenir Arabic Medium", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -277,7 +276,7 @@
 #message-header h2 {
   width: 526px;
   height: 33px;
-  font-family: "uniform rnd";
+  font-family: "Almarai Regular";
   font-weight: 500;
   font-size: 20px;
   line-height: 166%;
@@ -448,7 +447,7 @@
 
 #contact-rotate-text {
   position: absolute;
-  top: -254px;
+  top: -252px;
   left: -300px;
   z-index: -2;
 }
@@ -486,11 +485,8 @@
 }
 
 #contact-footer {
-  /*   margin-left: 75px;
-  margin-right: 75px; */
   height: 70px;
   width: 100%;
-  /* max-width: 1440px; */
   background: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;

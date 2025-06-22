@@ -1,3 +1,4 @@
+console.log(window.innerWidth)
 coloringIconsGray2Black();
 openCloseSideBar();
 categoriesAllWorks();

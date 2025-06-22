@@ -12,7 +12,7 @@ fetch("folders/components/header_ar/header_ar.html")
     coloringIconsGray2Black();
   });
 
-fetch("folders/rotating_text/rotatingText.html")
+fetch("folders/rotating_text_ar/rotatingText_ar.html")
 .then((res) => res.text())
 .then((data) => {
     document.querySelector("#said-rotate-text").innerHTML = data;

@@ -1,31 +1,23 @@
 @font-face {
-  font-family: "Fredoka";
-  src: url("../../fonts/Fredoka-VariableFont_wdth,wght.ttf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito";
-  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "uniform rnd";
-  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
+  font-family: "Almarai Regular";
+  src: url("../../fonts/Almarai-Regular.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 #blog-box {
   display: flex;
   align-items: center;
@@ -88,10 +80,10 @@
   /* display: flex; */
 }
 @media (max-width: 1298px) {
-#blog-agency .container main {
-  margin-top: 280px;
-}
-#blog-change-arrows {
+  #blog-agency .container main {
+    margin-top: 280px;
+  }
+  #blog-change-arrows {
     display: none;
   }
 }
@@ -133,12 +125,15 @@
 #blog-agency .container main h1 {
   width: 400px;
   height: 163px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 2000;
   font-size: 72px;
   line-height: 110%;
   letter-spacing: 2px;
   color: rgba(52, 52, 52, 1);
+}
+#blog-agency .container main h1 br {
+  display: none;
 }
 @media (max-width: 768px) {
   #blog-agency .container {
@@ -149,13 +144,16 @@
     height: 111px;
     margin: 57px 0 0 0;
   }
-#blog-agency .container main h1 {
-font-size: 48px;
-width: 300px;
+  #blog-agency .container main h1 {
+    font-size: 48px;
+    width: 300px;
+  }
+  #blog-agency .container main h1 br {
+    display: block;
   }
 }
 
-#blog-btn input{
+#blog-btn input {
   width: 214px;
   height: 70px;
   margin-top: 45px;
@@ -180,34 +178,33 @@ width: 300px;
   display: none;
 }
 @media (max-width: 768px) {
-#blog-btn input {
-  display: none;
-}
-#blog-btn {
-  position: absolute;
-  bottom: 40px;
-  right: 193px;
-}
-#blog-btn p {
-  font-family: "Avenir Arabic Medium";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: right;
-  display: flex;
-  align-items: center;
-}
-#blog-btn p img {
-  margin-right: 15px;
-  transform: rotate(180deg);
-}
+  #blog-btn input {
+    display: none;
+  }
+  #blog-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 193px;
+  }
+  #blog-btn p {
+    font-family: "Avenir Arabic Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+  #blog-btn p img {
+    margin-right: 15px;
+    transform: rotate(180deg);
+  }
 }
 #blog-btn input:hover {
   background-position: right;
   color: rgba(255, 255, 255, 1);
 }
-
 
 #blogs {
   display: flex;
@@ -231,7 +228,7 @@ width: 300px;
   margin: 28px 0 33px 75px;
 }
 @media (max-width: 1500px) {
-   #blog-group2 {
+  #blog-group2 {
     margin-left: 20px;
   }
 }
@@ -258,13 +255,13 @@ width: 300px;
   background-position: center;
   display: flex;
   justify-content: center;
-   border-radius: 28px;
+  border-radius: 28px;
 }
 
 #blog-group1 div:nth-child(1) .info-box {
   width: 281px;
   height: 78px;
-margin-top: 16px;
+  margin-top: 16px;
   border-radius: 8px;
   padding: 24px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -273,7 +270,7 @@ margin-top: 16px;
 #blog-group1 div:nth-child(1) .info-box h2 {
   width: 281px;
   height: 22px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -281,7 +278,7 @@ margin-top: 16px;
   color: white;
 }
 #blog-group1 div:nth-child(1) .info-box p {
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0%;
@@ -295,17 +292,17 @@ margin-top: 16px;
   gap: 10px;
   margin-bottom: 24px;
   position: relative;
-    background-image: url("../../images/social-media.jpg");
+  background-image: url("../../images/social-media.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
-   border-radius: 28px;
+  border-radius: 28px;
 }
 
 #blog-group1 div:nth-child(2) .info-box {
-margin-top: 16px;
+  margin-top: 16px;
   width: 305px;
   height: 83px;
   border-radius: 8px;
@@ -316,7 +313,7 @@ margin-top: 16px;
 #blog-group1 div:nth-child(2) .info-box h2 {
   width: 281px;
   height: 22px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -324,7 +321,7 @@ margin-top: 16px;
   color: white;
 }
 #blog-group1 div:nth-child(2) .info-box p {
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0%;
@@ -342,7 +339,7 @@ margin-top: 16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-   border-radius: 28px;
+  border-radius: 28px;
 }
 #blog-group1 div:nth-child(3) .info-box {
   width: 272px;
@@ -356,7 +353,7 @@ margin-top: 16px;
 #blog-group1 div:nth-child(3) .info-box h2 {
   width: 281px;
   height: 22px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -364,7 +361,7 @@ margin-top: 16px;
   color: white;
 }
 #blog-group1 div:nth-child(3) .info-box p {
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0%;
@@ -372,7 +369,7 @@ margin-top: 16px;
   padding-top: 8px;
 }
 @media (max-width: 768px) {
-  #blog-group1 > div:nth-child(1){
+  #blog-group1 > div:nth-child(1) {
     height: 235px;
     width: 100%;
     border-radius: 8px;
@@ -396,24 +393,24 @@ margin-top: 16px;
     width: 150px;
     height: 74px;
     padding: 0;
-    margin-top: 12px
+    margin-top: 12px;
   }
   #blog-group1 div:nth-child(1) .info-box h2,
   #blog-group1 div:nth-child(2) .info-box h2,
   #blog-group1 div:nth-child(3) .info-box h2 {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
     margin-left: 8px;
   }
   #blog-group1 div:nth-child(1) .info-box p,
   #blog-group1 div:nth-child(2) .info-box p,
   #blog-group1 div:nth-child(3) .info-box p {
-    font-size: 10px;
+    font-size: 9px;
     margin-left: 8px;
-    white-space: nowrap; 
-  overflow: hidden;            
-  text-overflow: ellipsis; 
-  letter-spacing: 0.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.8px;
   }
 }
 
@@ -446,7 +443,7 @@ margin-top: 16px;
 #blog-group2 div:nth-child(1) .info-box h2 {
   width: 281px;
   height: 22px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -454,12 +451,11 @@ margin-top: 16px;
   color: white;
 }
 #blog-group2 div:nth-child(1) .info-box p {
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0%;
   color: white;
-  
 }
 
 #blog-group2 div:nth-child(2) {
@@ -482,13 +478,13 @@ margin-top: 16px;
   padding: 24px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
-    flex-direction: column;
+  flex-direction: column;
   justify-content: start;
 }
 #blog-group2 div:nth-child(2) .info-box h2 {
   width: 281px;
   height: 22px;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
@@ -496,7 +492,7 @@ margin-top: 16px;
   color: white;
 }
 #blog-group2 div:nth-child(2) .info-box p {
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0%;
@@ -519,7 +515,7 @@ margin-top: 16px;
     border-radius: 8px;
   }
   #blog-group2 div:nth-child(1) .info-box,
-  #blog-group2 div:nth-child(2) .info-box{
+  #blog-group2 div:nth-child(2) .info-box {
     width: 150px;
     height: 74px;
     padding: 0;
@@ -527,19 +523,19 @@ margin-top: 16px;
   }
   #blog-group2 div:nth-child(1) .info-box h2,
   #blog-group2 div:nth-child(2) .info-box h2 {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
     margin-right: 8px;
   }
   #blog-group2 div:nth-child(1) .info-box p,
   #blog-group2 div:nth-child(2) .info-box p {
-    font-size: 10px;
+    font-size: 9px;
     margin-right: 8px;
-    font-weight: 100;     
-    white-space: nowrap; 
-  overflow: hidden;            
-  text-overflow: ellipsis; 
-  letter-spacing: 0.8px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.8px;
   }
 }
 

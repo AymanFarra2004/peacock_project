@@ -25,7 +25,7 @@ fetch("folders/components/header_ar/header_ar.html")
     
   });
 
-fetch("folders/rotating_text/rotatingText.html")
+fetch("folders/rotating_text_ar/rotatingText_ar.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#contact-rotate-text").innerHTML = data;

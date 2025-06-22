@@ -5,20 +5,20 @@
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Nunito";
-  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Fredoka";
-  src: url("../../fonts/Fredoka-VariableFont_wdth,wght.ttf") format("opentype");
+  font-family: "BalooBhaijaan2";
+  src: url("../../fonts/BalooBhaijaan2-VariableFont_wght.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
+
 #cate-header .sidebar-btn {
   transform: rotate(180deg);
 }
@@ -133,7 +133,7 @@
   #cate-h1-mobile h1 {
     width: 296px;
     height: 106px;
-    font-family: "Fredoka";
+    font-family: "BalooBhaijaan2";
     font-weight: 400;
     font-size: 48px;
     line-height: 110%;
@@ -176,7 +176,7 @@
 }
 
 #cate-grid > div:not(.container):not(#cate-title) > div:first-child p {
-  font-family: "Fredoka";
+  font-family: "BalooBhaijaan2";
   width: 199px;
   height: 52px;
   color: white;
@@ -387,7 +387,7 @@
 #cate-title h1 {
   height: 128px;
   gap: 12px;
-  font-family: "Fredoka", sans-serif;
+  font-family: "BalooBhaijaan2", sans-serif;
   font-weight: 500;
   font-size: 58px;
   line-height: 110%;
@@ -443,7 +443,7 @@
     width: 150px;
     height: 15px;
     font-size: 16px;
-    font-family: "Fredoka", sans-serif;
+    font-family: "BalooBhaijaan2", sans-serif;
     color: white;
     display: flex;
     align-items: center;
@@ -587,7 +587,7 @@
 #cate-rotating-text-top {
   position: absolute;
   top: -380px;
-  left: -160px;
+  right: -160px;
   z-index: -1;
 }
 @media (max-width: 768px) {

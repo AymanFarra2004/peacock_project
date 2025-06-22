@@ -1,28 +1,19 @@
 @font-face {
-  font-family: "Grandia";
-  src: url("../../fonts/grandia.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito";
-  src: url("../../fonts/Nunito-Regular.ttf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src: url("../../fonts/Fredoka-VariableFont_wdth,wght.ttf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Avenir Arabic Medium";
   src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
     format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almarai Regular";
+  src: url("../../fonts/Almarai-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -57,12 +48,12 @@
 }
 
 #rotating-text-top {
-  direction: ltr;
   position: absolute;
   left: -350px;
   top: -250px;
   z-index: -1;
-  text-align: left;
+  direction: ltr !important;
+  text-align: left !important;
 }
 @media (max-width: 768px) {
   #rotating-text-top {
@@ -78,7 +69,6 @@
 }
 @media (max-width: 768px) {
   #rotating-text-bottom {
-
     bottom: -390px;
     right: -320px;
   }
@@ -132,7 +122,7 @@
   width: 400px;
   height: 158px;
   margin: 41px 0 12px 0;
-  font-family: "Fredoka";
+  font-family: "Almarai Regular";
   color: rgba(52, 52, 52, 1);
   font-weight: 400;
   font-size: 72px;
@@ -191,7 +181,7 @@
   bottom: -20px;
   transition: left 0.5s;
 }
-.newsServices:hover .service-image img{
+.newsServices:hover .service-image img {
   left: 90px;
 }
 
@@ -387,7 +377,7 @@
 }
 .services-blur h2 {
   margin-right: 24px;
-  font-family: "Fredoka";
+  font-family: "Almarai Regular";
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
@@ -469,8 +459,7 @@
   }
   .newsServices .services-blur h2 {
     font-size: 18px;
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
 
   .voicerServices {
@@ -494,8 +483,7 @@
   }
   .voicerServices .services-blur h2 {
     font-size: 18px;
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
 
   .webDevelopment {
@@ -513,8 +501,7 @@
   }
   .webDevelopment .services-blur h2 {
     font-size: 18px;
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
 
   .digitalMarketing-platformMangement {
@@ -538,8 +525,7 @@
   }
   .digitalMarketing-platformMangement .services-blur h2 {
     font-size: 18px;
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
 
   .visualIdentity {
@@ -563,7 +549,7 @@
   .visualIdentity .services-blur h2 {
     font-size: 18px;
     margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
 
   .motionGraphic-videoProduction {
@@ -586,9 +572,12 @@
   .motionGraphic-videoProduction .services-blur h2 {
     font-size: 16px;
     width: 100%;
-    margin: 0;
-    margin-left: 13px;
+    margin: 0 10px 0 0;
   }
+  .motionGraphic-videoProduction .services-blur h2 br {
+    display: none;
+  }
+
 
   #services-flexBoxes .service {
     pointer-events: none;

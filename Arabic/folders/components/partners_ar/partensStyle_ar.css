@@ -1,17 +1,23 @@
 @font-face {
-  font-family: "uniform rnd";
-  src: url("../../fonts/uniform-rnd-bold.otf") format("opentype");
+  font-family: "Avenir Arabic Medium";
+  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almarai Regular";
+  src: url("../../fonts/Almarai-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Almarai Bold";
+  src: url("../../fonts/Almarai-Bold.ttf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Avenir Arabic Medium";
-  src: url("../../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
-    format("opentype");
-  font-weight: 100;
-  font-style: normal;
-}
 #partners-box {
   display: flex;
   flex-direction: column;
@@ -244,7 +250,7 @@
 
 #partners .container main h1 {
   width: 100%;
-  font-family: "uniform rnd", sans-serif;
+  font-family: "Almarai Regular", sans-serif;
   font-weight: 400;
   font-size: 46px;
   line-height: 110%;

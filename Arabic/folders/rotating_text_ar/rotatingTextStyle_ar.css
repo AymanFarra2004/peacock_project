@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Regular.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Arabic Medium";
+  src: url("../fonts/alfont_com_AlFont_com_AvenirArabic-Medium.otf")
+    format("opentype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+.rotating-circle- {
+  animation: rotate 20s linear infinite;
+  transform-origin: center;
+  word-spacing: 5px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
